@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>자율 탐구 아카이브 · Tarvis</title>
+<style>
+  :root {
+    --bg: #14161c;
+    --card: #1e2129;
+    --card-border: #2c303a;
+    --accent: #7eb8e0;
+    --accent-dim: #2d4a5c;
+    --text: #ececec;
+    --text-dim: #9a9fab;
+    --text-faint: #6b7080;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding-bottom: 60px;
+  }
+  header {
+    padding: 18px 16px 12px;
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    z-index: 10;
+    border-bottom: 1px solid var(--card-border);
+  }
+  .back { font-size: 12px; color: var(--text-faint); text-decoration: none; }
+  h1 { font-size: 18px; margin: 4px 0 2px; font-weight: 700; }
+  .sub { font-size: 12px; color: var(--text-dim); margin-bottom: 12px; }
+  .search {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid var(--card-border);
+    background: var(--card);
+    color: var(--text);
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 10px;
+  }
+  .tabs { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 2px; }
+  .tab {
+    flex: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    color: var(--text-dim);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .tab.active { background: var(--accent); color: #14161c; border-color: var(--accent); }
+  main { padding: 14px 16px; max-width: 760px; margin: 0 auto; }
+  .entry {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+  }
+  .entry h2 { font-size: 14px; margin: 0 0 8px; color: var(--accent); font-weight: 700; }
+  .entry h3 { font-size: 13px; margin: 10px 0 4px; color: var(--text); }
+  .entry p { margin: 0 0 8px; font-size: 13.5px; line-height: 1.6; color: var(--text-dim); }
+  .entry ul { margin: 0 0 8px; padding-left: 20px; }
+  .entry li { font-size: 13.5px; line-height: 1.6; color: var(--text-dim); margin-bottom: 4px; }
+  .entry strong { color: var(--text); }
+  .entry code { background: #0d0f14; padding: 1px 5px; border-radius: 4px; font-size: 12.5px; }
+  .entry a { color: var(--accent); }
+  .entry hr { border: none; border-top: 1px solid var(--card-border); margin: 10px 0; }
+  .loading, .empty { text-align: center; color: var(--text-faint); padding: 40px 20px; font-size: 13px; }
+  .count { font-size: 11px; color: var(--text-faint); margin-bottom: 10px; }
+</style>
+</head>
+<body>
+
+<header>
+  <a class="back" href="../">← 허브로</a>
+  <h1>🔭 자율 탐구 아카이브</h1>
+  <div class="sub">Tarvis가 시간마다 조사한 8개 영역 기록</div>
+  <input class="search" id="search" type="text" placeholder="검색 (키워드)">
+  <div class="tabs" id="tabs"></div>
+</header>
+
+<main>
+  <div class="count" id="count"></div>
+  <div id="list" class="loading">불러오는 중...</div>
+</main>
+
+<script>
+const DOMAINS = [
+  { key: 'game', label: '🎮 게임', file: 'data/game.md' },
+  { key: 'culture', label: '🎭 문화', file: 'data/culture.md' },
+  { key: 'history', label: '🏛️ 역사', file: 'data/history.md' },
+  { key: 'finance', label: '💰 금융', file: 'data/finance.md' },
+  { key: 'movie', label: '🎬 영화', file: 'data/movie.md' },
+  { key: 'animation', label: '📺 애니', file: 'data/animation.md' },
+  { key: 'ai', label: '🤖 AI', file: 'data/ai.md' },
+  { key: 'science', label: '🔬 과학', file: 'data/science.md' },
+];
+
+const tabsEl = document.getElementById('tabs');
+const listEl = document.getElementById('list');
+const countEl = document.getElementById('count');
+const searchEl = document.getElementById('search');
+
+let activeDomain = DOMAINS[0].key;
+const cache = {};
+
+function renderTabs() {
+  tabsEl.innerHTML = '';
+  DOMAINS.forEach(d => {
+    const btn = document.createElement('div');
+    btn.className = 'tab' + (d.key === activeDomain ? ' active' : '');
+    btn.textContent = d.label;
+    btn.onclick = () => { activeDomain = d.key; searchEl.value = ''; load(); };
+    tabsEl.appendChild(btn);
+  });
+}
+
+// Minimal markdown -> HTML (headers, bold, italic, inline code, links, lists, hr, paragraphs)
+function mdToHtml(md) {
+  const lines = md.split('\n');
+  let html = '';
+  let inList = false;
+  const closeList = () => { if (inList) { html += '</ul>'; inList = false; } };
+
+  for (let raw of lines) {
+    const line = raw.trimEnd();
+    if (/^---+$/.test(line.trim())) { closeList(); html += '<hr>'; continue; }
+    const h = line.match(/^(#{1,4})\s+(.*)$/);
+    if (h) {
+      closeList();
+      const level = Math.min(h[1].length + 1, 4); // ## -> h2 inside entry
+      html += `<h${level}>${inline(h[2])}</h${level}>`;
+      continue;
+    }
+    const li = line.match(/^[-*]\s+(.*)$/);
+    if (li) {
+      if (!inList) { html += '<ul>'; inList = true; }
+      html += `<li>${inline(li[1])}</li>`;
+      continue;
+    }
+    if (line.trim() === '') { closeList(); continue; }
+    closeList();
+    html += `<p>${inline(line)}</p>`;
+  }
+  closeList();
+  return html;
+}
+
+function inline(s) {
+  s = s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  s = s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  s = s.replace(/`([^`]+)`/g, '<code>$1</code>');
+  s = s.replace(/\[\[([^\]]+)\]\]/g, '<code>[[$1]]</code>');
+  s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+  return s;
+}
+
+// Split a domain's markdown into entries by top-level "## " or "### " headings (chronological log entries)
+function splitEntries(md) {
+  const blocks = md.split(/\n(?=#{2,3}\s)/);
+  return blocks.filter(b => b.trim().length > 0);
+}
+
+async function load() {
+  renderTabs();
+  listEl.className = 'loading';
+  listEl.textContent = '불러오는 중...';
+  const domain = DOMAINS.find(d => d.key === activeDomain);
+  try {
+    if (!cache[domain.key]) {
+      const res = await fetch(domain.file);
+      const text = await res.text();
+      cache[domain.key] = splitEntries(text);
+    }
+    renderList();
+  } catch (e) {
+    listEl.className = 'empty';
+    listEl.textContent = '불러오기 실패: ' + e.message;
+  }
+}
+
+function renderList() {
+  const entries = cache[activeDomain] || [];
+  const q = searchEl.value.trim().toLowerCase();
+  const filtered = q ? entries.filter(e => e.toLowerCase().includes(q)) : entries;
+  countEl.textContent = `총 ${entries.length}개 항목 중 ${filtered.length}개 표시`;
+  if (!filtered.length) {
+    listEl.className = 'empty';
+    listEl.textContent = '검색 결과가 없어요';
+    return;
+  }
+  listEl.className = '';
+  listEl.innerHTML = filtered.map(e => `<div class="entry">${mdToHtml(e)}</div>`).join('');
+}
+
+searchEl.addEventListener('input', renderList);
+load();
+</script>
+
+</body>
+</html>

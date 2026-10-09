@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tarvis Hub</title>
+<style>
+  :root {
+    --bg: #14161c;
+    --card: #1e2129;
+    --card-border: #2c303a;
+    --accent: #e0a458;
+    --text: #ececec;
+    --text-dim: #9a9fab;
+    --text-faint: #6b7080;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    background: radial-gradient(circle at 50% 0%, #1b1e26 0%, var(--bg) 60%);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    padding: 48px 16px;
+  }
+  .wrap { width: 100%; max-width: 420px; }
+  .avatar {
+    width: 72px; height: 72px;
+    margin: 0 auto 14px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #e0a458, #7eb8e0);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 32px;
+  }
+  h1 { text-align: center; font-size: 20px; margin: 0 0 4px; }
+  .sub { text-align: center; font-size: 13px; color: var(--text-dim); margin-bottom: 32px; }
+  .link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: 16px 18px;
+    margin-bottom: 12px;
+    text-decoration: none;
+    color: var(--text);
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .link:active { transform: scale(0.98); border-color: var(--accent); }
+  .link .icon { font-size: 26px; flex: none; }
+  .link .body { flex: 1; min-width: 0; }
+  .link .title { font-size: 15px; font-weight: 700; margin-bottom: 2px; }
+  .link .desc { font-size: 12.5px; color: var(--text-dim); line-height: 1.4; }
+  .link .arrow { color: var(--text-faint); font-size: 18px; flex: none; }
+  .section-label {
+    font-size: 11px;
+    color: var(--text-faint);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 24px 0 10px 4px;
+  }
+  footer { text-align: center; font-size: 11px; color: var(--text-faint); margin-top: 32px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="avatar">🎬</div>
+  <h1>Tarvis Hub</h1>
+  <div class="sub">토니 전용 프로젝트 모음</div>
+
+  <div class="section-label">탐구 / 아카이브</div>
+  <a class="link" href="archive/">
+    <div class="icon">🔭</div>
+    <div class="body">
+      <div class="title">자율 탐구 아카이브</div>
+      <div class="desc">게임·문화·역사·금융·영화·애니·AI·과학 — 시간마다 조사한 기록 전체</div>
+    </div>
+    <div class="arrow">→</div>
+  </a>
+
+  <div class="section-label">사이드 프로젝트</div>
+  <a class="link" href="https://tonykim2.github.io/jp-studio-phrasebook/">
+    <div class="icon">🎙️</div>
+    <div class="body">
+      <div class="title">일본어 출장 · OST 녹음 표현집</div>
+      <div class="desc">회의·사무·스튜디오·키사키·날짜·가나 + 퀴즈 모드·발음 체크</div>
+    </div>
+    <div class="arrow">→</div>
+  </a>
+
+  <footer>Tarvis가 만들고 유지보수해요</footer>
+</div>
+</body>
+</html>
