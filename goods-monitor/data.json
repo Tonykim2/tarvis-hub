@@ -1,7 +1,7 @@
 {
- "observedAt": "2026-10-31 20:06까지 확인 (분류 근거를 기록한 글 98건)",
- "updatedAt": "2026-10-31T20:12+09:00",
- "imageCount": 13,
+ "observedAt": "2026-10-31 21:06까지 확인 (분류 근거를 기록한 글 106건)",
+ "updatedAt": "2026-10-31T21:12+09:00",
+ "imageCount": 16,
  "coverage": "정상 수령 보고가 늘어난 것이 앞서 확인된 파손 사례를 상쇄하지는 않습니다. 두 수치는 분리해 보아야 합니다. 아카라이브는 글 목록만 확인했고 글 하나하나는 접근이 막혀 내용과 사진을 확인하지 못했습니다. 엑스(옛 트위터)는 이번 점검 범위에 들어 있지 않습니다.",
  "photos": [
   {
@@ -55,6 +55,18 @@
   {
    "file": "19685356-0.jpg",
    "label": "정상 수령 사례 · 받은 마녀 모자를 씌워 본 사진"
+  },
+  {
+   "file": "19685940-1.jpg",
+   "label": "포토카드 상태 불만 ② · 머그컵 상자가 베개 위에 얹힌 상자 안 적재 상태"
+  },
+  {
+   "file": "19685940-2.jpg",
+   "label": "포토카드 상태 불만 ② · 가로로 휨선이 생긴 포토카드"
+  },
+  {
+   "file": "19685962-1.jpg",
+   "label": "정상 수령 사례 · 모자 베개와 목베개를 펼쳐 둔 보관 요령 사진(비교용)"
   }
  ],
  "posts": [
@@ -2569,6 +2581,222 @@
     "topic:mug"
    ],
    "tone": "negative",
+   "toneBasis": "title",
+   "depth": "title",
+   "timeKind": "found"
+  },
+  {
+   "id": "19685761",
+   "title": "에리 모자하고 까까 같이 사면 안 부서져서 오더라",
+   "time": "20:03",
+   "category": "other",
+   "reason": "에리 모자 베개와 카노에 머그컵을 함께 주문해 둘 다 멀쩡하게 받았다는 후기입니다. 푹신한 베개가 함께 담겨 컵을 지켜 준 것 같다는 내용이며, 파손이나 불량 주장은 없습니다. 비교용으로만 기록했고 피해 집계에는 넣지 않았습니다.",
+   "case": null,
+   "images": [],
+   "parent": null,
+   "photoRelation": "글에 사진이 있으나 따로 확인하지 않음",
+   "confidence": "글 내용을 직접 확인",
+   "platform": "DC projectmx",
+   "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19685761",
+   "relation": "해당 없음 또는 미확인",
+   "tags": [
+    "char:eri",
+    "char:kanoe",
+    "neg:broken",
+    "neg:quality",
+    "pos:intact",
+    "topic:arrival",
+    "topic:mug",
+    "topic:pillow"
+   ],
+   "tone": "mixed",
+   "toneBasis": "body",
+   "depth": "body",
+   "timeKind": "posted",
+   "otherGroup": "사진으로 정상 확인"
+  },
+  {
+   "id": "19685787",
+   "title": "겨울나기~",
+   "time": "20:07",
+   "category": "pending",
+   "reason": "글에 설명 없이 사진 한 장만 올라와 있는 것을 확인했습니다. 받은 물건을 보여 주는 인증 글로 보이지만 사진을 따로 확인하지 못해 상태가 어떤지는 판단을 보류했습니다.",
+   "case": null,
+   "images": [],
+   "parent": null,
+   "photoRelation": "사진을 확인하지 못함",
+   "confidence": "글 내용을 직접 확인",
+   "platform": "DC projectmx",
+   "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19685787",
+   "relation": "해당 없음 또는 미확인",
+   "tags": [
+    "line:winter"
+   ],
+   "tone": "neutral",
+   "toneBasis": "body",
+   "depth": "body",
+   "timeKind": "posted"
+  },
+  {
+   "id": "19685821",
+   "title": "까까 머그컵 살 껄 그랬나",
+   "time": "20:14",
+   "category": "excluded",
+   "reason": "머그컵을 사지 않은 사람이 사 둘 걸 그랬다고 적은 글입니다. 상품 상태나 포장과는 관련이 없어 집계에서 제외했습니다.",
+   "case": null,
+   "images": [],
+   "parent": null,
+   "photoRelation": "해당 없음",
+   "confidence": "글 내용을 직접 확인",
+   "platform": "DC projectmx",
+   "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19685821",
+   "relation": "해당 없음 또는 미확인",
+   "tags": [
+    "char:kanoe",
+    "neg:cushioning",
+    "scope:offtopic",
+    "topic:mug"
+   ],
+   "tone": "neutral",
+   "toneBasis": "body",
+   "depth": "body",
+   "timeKind": "posted"
+  },
+  {
+   "id": "19685940",
+   "title": "겨울나기나기 굿즈 포카 구겨짐...",
+   "time": "20:31",
+   "category": "confirmed",
+   "case": "BA-PC-02",
+   "reason": "택배 상자를 열었더니 단단한 머그컵 상자가 눌린 베개 봉투 위에 얹혀 있었고 그 아래에 끼어 있던 포토카드가 눌려 왔다는 내용입니다. 첨부 사진 두 장을 직접 확인했습니다. 첫 장에서 상자 안 적재 상태가, 둘째 장에서 비닐에 싸인 포토카드의 가로 방향 휨선이 보입니다. 머그컵은 깨지지 않았고 모자 베개와 피규어도 괜찮다고 적었습니다. 앞서 확인된 포토카드 사례와는 작성자도 사진도 달라 같은 사건으로 묶지 않았습니다. 다만 눌린 원인이 어디에 있는지까지는 판단하지 않았습니다.",
+   "images": [
+    "19685940-1.jpg",
+    "19685940-2.jpg"
+   ],
+   "parent": null,
+   "photoRelation": "이 사건 고유 사진 2장 · 앞선 포토카드 사진과 피사체·배경 모두 다름",
+   "confidence": "글과 사진을 직접 확인",
+   "platform": "DC projectmx",
+   "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19685940",
+   "relation": "해당 없음 또는 미확인",
+   "finishIssue": [
+    "포토카드 구김"
+   ],
+   "tags": [
+    "line:winter",
+    "neg:broken",
+    "neg:finish",
+    "pos:satisfied",
+    "scope:offtopic",
+    "topic:arrival",
+    "topic:figure",
+    "topic:goods",
+    "topic:mug",
+    "topic:photocard",
+    "topic:pillow"
+   ],
+   "tone": "negative",
+   "toneBasis": "body",
+   "depth": "body",
+   "timeKind": "posted"
+  },
+  {
+   "id": "19685962",
+   "title": "에리 모자 정리하는 법 꿀팁 알려줌",
+   "time": "20:36",
+   "category": "other",
+   "reason": "받은 모자 베개와 목베개를 옷걸이와 셔츠로 보관하는 요령을 알려 주는 글입니다. 글귀 없이 사진만 올라와 있고, 사진에서 두 제품 모두 상한 곳 없이 펼쳐져 있는 것을 직접 확인했습니다. 파손이나 불량 주장은 없어 비교용으로만 기록했습니다.",
+   "case": null,
+   "images": [
+    "19685962-1.jpg"
+   ],
+   "parent": null,
+   "photoRelation": "이 글 고유 사진 · 파손은 보이지 않음",
+   "confidence": "글과 사진을 직접 확인",
+   "platform": "DC projectmx",
+   "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19685962",
+   "relation": "해당 없음 또는 미확인",
+   "tags": [
+    "char:eri",
+    "neg:broken",
+    "neg:quality",
+    "topic:pillow"
+   ],
+   "tone": "negative",
+   "toneBasis": "body",
+   "depth": "body",
+   "timeKind": "posted",
+   "otherGroup": "사진으로 정상 확인"
+  },
+  {
+   "id": "19686038",
+   "title": "이거 에리 모자쓰면 어떻게되는거냐",
+   "time": "20:49",
+   "category": "excluded",
+   "reason": "모자를 쓰면 어떻게 되느냐는 농담 섞인 질문 글입니다. 상품 상태에 대한 언급이 없어 집계에서 제외했습니다.",
+   "case": null,
+   "images": [],
+   "parent": null,
+   "photoRelation": "해당 없음",
+   "confidence": "글 내용을 직접 확인",
+   "platform": "DC projectmx",
+   "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19686038",
+   "relation": "해당 없음 또는 미확인",
+   "tags": [
+    "char:eri",
+    "scope:offtopic",
+    "topic:pillow"
+   ],
+   "tone": "neutral",
+   "toneBasis": "body",
+   "depth": "body",
+   "timeKind": "posted"
+  },
+  {
+   "id": "19686074",
+   "title": "남들 다 와헌자켓에리모자 받을때 왜 내꺼만안와",
+   "time": "20:54",
+   "category": "excluded",
+   "reason": "다른 사람들은 받았는데 자기 것만 아직 오지 않았다는 배송 지연 글입니다. 물건을 받기 전이라 상태에 대한 내용이 없어 집계에서 제외했습니다. 첨부된 그림은 이모티콘이며 증거 사진이 아닙니다.",
+   "case": null,
+   "images": [],
+   "parent": null,
+   "photoRelation": "해당 없음",
+   "confidence": "글 내용을 직접 확인",
+   "platform": "DC projectmx",
+   "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19686074",
+   "relation": "해당 없음 또는 미확인",
+   "tags": [
+    "char:eri",
+    "scope:offtopic",
+    "topic:arrival",
+    "topic:pillow",
+    "vendor:wahun"
+   ],
+   "tone": "neutral",
+   "toneBasis": "body",
+   "depth": "body",
+   "timeKind": "posted"
+  },
+  {
+   "id": "187654071",
+   "title": "변온 머그컵 온도 진짜 높게 잡아놓긴 했네",
+   "time": "20:17",
+   "category": "pending",
+   "reason": "아카라이브 글 목록에서 제목만 확보했습니다. 제목으로는 머그컵 그림이 드러나는 온도가 높게 맞춰져 있다는 감상으로 읽히지만, 불편을 겪었다는 뜻인지 단순한 관찰인지와 그 근거는 확인하지 못했습니다.",
+   "case": null,
+   "images": [],
+   "parent": null,
+   "photoRelation": "사진을 확인하지 못함",
+   "confidence": "목록에서 제목만 확인",
+   "platform": "arca.live",
+   "url": "https://arca.live/b/bluearchive/187654071",
+   "relation": "해당 없음 또는 미확인",
+   "tags": [
+    "topic:mug",
+    "topic:thermal"
+   ],
+   "tone": "neutral",
    "toneBasis": "title",
    "depth": "title",
    "timeKind": "found"
