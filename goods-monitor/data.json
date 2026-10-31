@@ -75,7 +75,15 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683196",
    "relation": "해당 없음 또는 미확인",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "char:kanoe",
+    "neg:broken",
+    "topic:arrival",
+    "topic:mug"
+   ],
+   "tone": "negative",
+   "toneBasis": "body"
   },
   {
    "id": "19683206",
@@ -94,7 +102,14 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683206",
    "relation": "해당 없음 또는 미확인",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "neg:broken",
+    "neg:cushioning",
+    "topic:mug"
+   ],
+   "tone": "negative",
+   "toneBasis": "body"
   },
   {
    "id": "19683242",
@@ -113,7 +128,15 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683242",
    "relation": "본인 후속",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "neg:broken",
+    "neg:exchange",
+    "topic:arrival",
+    "topic:mug"
+   ],
+   "tone": "negative",
+   "toneBasis": "body"
   },
   {
    "id": "19683805",
@@ -130,7 +153,14 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683805",
    "relation": "본인 후속",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "neg:broken",
+    "topic:arrival",
+    "topic:mug"
+   ],
+   "tone": "negative",
+   "toneBasis": "body"
   },
   {
    "id": "19683818",
@@ -147,7 +177,16 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683818",
    "relation": "본인 후속",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "char:eri",
+    "neg:broken",
+    "pos:satisfied",
+    "topic:mug",
+    "topic:pillow"
+   ],
+   "tone": "mixed",
+   "toneBasis": "body"
   },
   {
    "id": "19683343",
@@ -164,7 +203,12 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683343",
    "relation": "타인 인용·비판",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "topic:mug"
+   ],
+   "tone": "neutral",
+   "toneBasis": "body"
   },
   {
    "id": "19683298",
@@ -181,7 +225,14 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683298",
    "relation": "타인 인용·비판",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "line:winter",
+    "neg:vendor",
+    "topic:goods"
+   ],
+   "tone": "negative",
+   "toneBasis": "body"
   },
   {
    "id": "19683810",
@@ -198,7 +249,14 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683810",
    "relation": "타인 인용·비판",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "neg:quality",
+    "neg:vendor",
+    "topic:goods"
+   ],
+   "tone": "negative",
+   "toneBasis": "body"
   },
   {
    "id": "19683442",
@@ -215,7 +273,12 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683442",
    "relation": "타인 인용·비판",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "topic:mug"
+   ],
+   "tone": "neutral",
+   "toneBasis": "body"
   },
   {
    "id": "19683338",
@@ -235,7 +298,17 @@
    "timeKind": "posted",
    "finishIssue": [
     "피규어 조립부 빡빡함"
-   ]
+   ],
+   "tags": [
+    "char:kanoe",
+    "neg:assembly",
+    "neg:broken",
+    "topic:arrival",
+    "topic:figure",
+    "topic:mug"
+   ],
+   "tone": "negative",
+   "toneBasis": "body"
   },
   {
    "id": "19683608",
@@ -253,7 +326,16 @@
    "relation": "해당 없음 또는 미확인",
    "depth": "body",
    "timeKind": "posted",
-   "otherGroup": "조립 방법 안내"
+   "otherGroup": "조립 방법 안내",
+   "tags": [
+    "char:kanoe",
+    "neg:assembly",
+    "neg:quality",
+    "topic:figure",
+    "topic:mug"
+   ],
+   "tone": "neutral",
+   "toneBasis": "body"
   },
   {
    "id": "19683783",
@@ -271,7 +353,16 @@
    "relation": "해당 없음 또는 미확인",
    "depth": "body",
    "timeKind": "posted",
-   "otherGroup": "사진으로 정상 확인"
+   "otherGroup": "사진으로 정상 확인",
+   "tags": [
+    "char:kanoe",
+    "pos:function",
+    "pos:intact",
+    "topic:figure",
+    "topic:mug"
+   ],
+   "tone": "positive",
+   "toneBasis": "body"
   },
   {
    "id": "19683559",
@@ -293,7 +384,21 @@
    "finishIssue": [
     "포토카드 구김",
     "설명서 없음"
-   ]
+   ],
+   "tags": [
+    "char:eri",
+    "neg:finish",
+    "neg:quality",
+    "pos:intact",
+    "pos:satisfied",
+    "topic:arrival",
+    "topic:goods",
+    "topic:photocard",
+    "topic:thermal",
+    "vendor:wahun"
+   ],
+   "tone": "mixed",
+   "toneBasis": "body"
   },
   {
    "id": "19683744",
@@ -314,7 +419,18 @@
    "otherGroup": "수령했으나 지적 사항 있음",
    "finishIssue": [
     "완충재 없음"
-   ]
+   ],
+   "tags": [
+    "neg:broken",
+    "neg:cushioning",
+    "neg:finish",
+    "pos:intact",
+    "topic:arrival",
+    "topic:figure",
+    "topic:mug"
+   ],
+   "tone": "mixed",
+   "toneBasis": "body"
   },
   {
    "id": "19683384",
@@ -332,7 +448,15 @@
    "relation": "해당 없음 또는 미확인",
    "depth": "body",
    "timeKind": "posted",
-   "otherGroup": "사진으로 정상 확인"
+   "otherGroup": "사진으로 정상 확인",
+   "tags": [
+    "char:kanoe",
+    "pos:intact",
+    "topic:arrival",
+    "topic:mug"
+   ],
+   "tone": "positive",
+   "toneBasis": "body"
   },
   {
    "id": "19683841",
@@ -350,7 +474,14 @@
    "relation": "해당 없음 또는 미확인",
    "depth": "body",
    "timeKind": "posted",
-   "otherGroup": "사진으로 정상 확인"
+   "otherGroup": "사진으로 정상 확인",
+   "tags": [
+    "char:eri",
+    "pos:intact",
+    "topic:arrival"
+   ],
+   "tone": "positive",
+   "toneBasis": "body"
   },
   {
    "id": "19683585",
@@ -367,7 +498,12 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683585",
    "relation": "해당 없음 또는 미확인",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "scope:offtopic"
+   ],
+   "tone": "neutral",
+   "toneBasis": "body"
   },
   {
    "id": "19683396",
@@ -384,7 +520,15 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683396",
    "relation": "타인 인용·비판",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "char:kanoe",
+    "neg:cushioning",
+    "pos:value",
+    "topic:mug"
+   ],
+   "tone": "mixed",
+   "toneBasis": "body"
   },
   {
    "id": "19683230",
@@ -401,7 +545,14 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683230",
    "relation": "타인 인용·비판",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "neg:assembly",
+    "neg:cushioning",
+    "topic:mug"
+   ],
+   "tone": "negative",
+   "toneBasis": "body"
   },
   {
    "id": "19683358",
@@ -418,7 +569,12 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683358",
    "relation": "타인 인용·비판",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "neg:cushioning"
+   ],
+   "tone": "negative",
+   "toneBasis": "body"
   },
   {
    "id": "19683399",
@@ -435,7 +591,12 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683399",
    "relation": "타인 인용·비판",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "neg:cushioning"
+   ],
+   "tone": "negative",
+   "toneBasis": "body"
   },
   {
    "id": "187616096",
@@ -452,7 +613,14 @@
    "url": "https://arca.live/b/bluearchive/187616096",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [
+    "topic:goods",
+    "topic:mug",
+    "topic:pillow"
+   ],
+   "tone": "neutral",
+   "toneBasis": "title"
   },
   {
    "id": "187619040",
@@ -469,7 +637,14 @@
    "url": "https://arca.live/b/bluearchive/187619040",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [
+    "line:winter",
+    "neg:quality",
+    "topic:goods"
+   ],
+   "tone": "negative",
+   "toneBasis": "title"
   },
   {
    "id": "187618599",
@@ -486,7 +661,13 @@
    "url": "https://arca.live/b/bluearchive/187618599",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [
+    "neg:cushioning",
+    "topic:mug"
+   ],
+   "tone": "negative",
+   "toneBasis": "title"
   },
   {
    "id": "187618165",
@@ -503,7 +684,13 @@
    "url": "https://arca.live/b/bluearchive/187618165",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [
+    "neg:broken",
+    "topic:mug"
+   ],
+   "tone": "negative",
+   "toneBasis": "title"
   },
   {
    "id": "187617276",
@@ -520,7 +707,12 @@
    "url": "https://arca.live/b/bluearchive/187617276",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [
+    "neg:cushioning"
+   ],
+   "tone": "negative",
+   "toneBasis": "title"
   },
   {
    "id": "187619996",
@@ -537,7 +729,13 @@
    "url": "https://arca.live/b/bluearchive/187619996",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [
+    "neg:quality",
+    "topic:goods"
+   ],
+   "tone": "negative",
+   "toneBasis": "title"
   },
   {
    "id": "187616651",
@@ -554,7 +752,13 @@
    "url": "https://arca.live/b/bluearchive/187616651",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [
+    "neg:vendor",
+    "topic:goods"
+   ],
+   "tone": "negative",
+   "toneBasis": "title"
   },
   {
    "id": "19683902",
@@ -571,7 +775,15 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683902",
    "relation": "해당 없음 또는 미확인",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "char:eri",
+    "neg:broken",
+    "neg:cushioning",
+    "scope:offtopic"
+   ],
+   "tone": "neutral",
+   "toneBasis": "body"
   },
   {
    "id": "19683920",
@@ -588,7 +800,15 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683920",
    "relation": "해당 없음 또는 미확인",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "char:kanoe",
+    "scope:offtopic",
+    "topic:arrival",
+    "topic:mug"
+   ],
+   "tone": "neutral",
+   "toneBasis": "body"
   },
   {
    "id": "19683875",
@@ -605,7 +825,14 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683875",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "char:kanoe",
+    "scope:offtopic",
+    "topic:goods"
+   ],
+   "tone": "neutral",
+   "toneBasis": "title"
   },
   {
    "id": "19684002",
@@ -627,7 +854,19 @@
    "timeKind": "posted",
    "finishIssue": [
     "포토카드 구김"
-   ]
+   ],
+   "tags": [
+    "neg:broken",
+    "neg:cushioning",
+    "neg:finish",
+    "neg:quality",
+    "topic:figure",
+    "topic:mug",
+    "topic:photocard",
+    "topic:thermal"
+   ],
+   "tone": "negative",
+   "toneBasis": "body"
   },
   {
    "id": "19684072",
@@ -644,7 +883,17 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684072",
    "relation": "본인 후속",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "char:kanoe",
+    "pos:cute",
+    "topic:arrival",
+    "topic:figure",
+    "topic:mug",
+    "topic:photocard"
+   ],
+   "tone": "positive",
+   "toneBasis": "body"
   },
   {
    "id": "19684000",
@@ -662,7 +911,18 @@
    "relation": "해당 없음 또는 미확인",
    "depth": "body",
    "timeKind": "posted",
-   "otherGroup": "사진으로 정상 확인"
+   "otherGroup": "사진으로 정상 확인",
+   "tags": [
+    "char:kanoe",
+    "neg:broken",
+    "pos:intact",
+    "topic:arrival",
+    "topic:figure",
+    "topic:mug",
+    "topic:thermal"
+   ],
+   "tone": "positive",
+   "toneBasis": "body"
   },
   {
    "id": "19684078",
@@ -680,7 +940,16 @@
    "relation": "해당 없음 또는 미확인",
    "depth": "body",
    "timeKind": "posted",
-   "otherGroup": "사진으로 정상 확인"
+   "otherGroup": "사진으로 정상 확인",
+   "tags": [
+    "neg:broken",
+    "pos:intact",
+    "topic:arrival",
+    "topic:figure",
+    "topic:mug"
+   ],
+   "tone": "positive",
+   "toneBasis": "body"
   },
   {
    "id": "19683976",
@@ -697,7 +966,15 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683976",
    "relation": "해당 없음 또는 미확인",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "neg:broken",
+    "neg:cushioning",
+    "scope:offtopic",
+    "topic:goods"
+   ],
+   "tone": "neutral",
+   "toneBasis": "body"
   },
   {
    "id": "187623236",
@@ -714,7 +991,10 @@
    "url": "https://arca.live/b/bluearchive/187623236",
    "relation": "해당 없음 또는 미확인",
    "depth": "id",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [],
+   "tone": "neutral",
+   "toneBasis": "id"
   },
   {
    "id": "187624175",
@@ -731,7 +1011,10 @@
    "url": "https://arca.live/b/bluearchive/187624175",
    "relation": "해당 없음 또는 미확인",
    "depth": "id",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [],
+   "tone": "neutral",
+   "toneBasis": "id"
   },
   {
    "id": "187624294",
@@ -748,7 +1031,10 @@
    "url": "https://arca.live/b/bluearchive/187624294",
    "relation": "해당 없음 또는 미확인",
    "depth": "id",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [],
+   "tone": "neutral",
+   "toneBasis": "id"
   },
   {
    "id": "187624604",
@@ -765,7 +1051,10 @@
    "url": "https://arca.live/b/bluearchive/187624604",
    "relation": "해당 없음 또는 미확인",
    "depth": "id",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [],
+   "tone": "neutral",
+   "toneBasis": "id"
   },
   {
    "id": "187624607",
@@ -782,7 +1071,10 @@
    "url": "https://arca.live/b/bluearchive/187624607",
    "relation": "해당 없음 또는 미확인",
    "depth": "id",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [],
+   "tone": "neutral",
+   "toneBasis": "id"
   },
   {
    "id": "187625130",
@@ -799,7 +1091,10 @@
    "url": "https://arca.live/b/bluearchive/187625130",
    "relation": "해당 없음 또는 미확인",
    "depth": "id",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [],
+   "tone": "neutral",
+   "toneBasis": "id"
   },
   {
    "id": "187625214",
@@ -816,7 +1111,10 @@
    "url": "https://arca.live/b/bluearchive/187625214",
    "relation": "해당 없음 또는 미확인",
    "depth": "id",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [],
+   "tone": "neutral",
+   "toneBasis": "id"
   },
   {
    "id": "187625870",
@@ -833,7 +1131,10 @@
    "url": "https://arca.live/b/bluearchive/187625870",
    "relation": "해당 없음 또는 미확인",
    "depth": "id",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [],
+   "tone": "neutral",
+   "toneBasis": "id"
   },
   {
    "id": "187625918",
@@ -850,7 +1151,10 @@
    "url": "https://arca.live/b/bluearchive/187625918",
    "relation": "해당 없음 또는 미확인",
    "depth": "id",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [],
+   "tone": "neutral",
+   "toneBasis": "id"
   },
   {
    "id": "187626066",
@@ -867,7 +1171,10 @@
    "url": "https://arca.live/b/bluearchive/187626066",
    "relation": "해당 없음 또는 미확인",
    "depth": "id",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [],
+   "tone": "neutral",
+   "toneBasis": "id"
   },
   {
    "id": "187626150",
@@ -884,7 +1191,10 @@
    "url": "https://arca.live/b/bluearchive/187626150",
    "relation": "해당 없음 또는 미확인",
    "depth": "id",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [],
+   "tone": "neutral",
+   "toneBasis": "id"
   },
   {
    "id": "187626284",
@@ -901,7 +1211,10 @@
    "url": "https://arca.live/b/bluearchive/187626284",
    "relation": "해당 없음 또는 미확인",
    "depth": "id",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [],
+   "tone": "neutral",
+   "toneBasis": "id"
   },
   {
    "id": "187626311",
@@ -918,7 +1231,10 @@
    "url": "https://arca.live/b/bluearchive/187626311",
    "relation": "해당 없음 또는 미확인",
    "depth": "id",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [],
+   "tone": "neutral",
+   "toneBasis": "id"
   },
   {
    "id": "187626440",
@@ -935,7 +1251,10 @@
    "url": "https://arca.live/b/bluearchive/187626440",
    "relation": "해당 없음 또는 미확인",
    "depth": "id",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [],
+   "tone": "neutral",
+   "toneBasis": "id"
   },
   {
    "id": "19684103",
@@ -952,7 +1271,15 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684103",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "neg:broken",
+    "neg:cushioning",
+    "topic:mug",
+    "topic:thermal"
+   ],
+   "tone": "negative",
+   "toneBasis": "title"
   },
   {
    "id": "19684129",
@@ -969,7 +1296,16 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684129",
    "relation": "본인 후속",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "neg:cushioning",
+    "neg:vendor",
+    "topic:goods",
+    "topic:photocard",
+    "vendor:wahun"
+   ],
+   "tone": "negative",
+   "toneBasis": "body"
   },
   {
    "id": "19684144",
@@ -986,7 +1322,14 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684144",
    "relation": "타인 인용·비판",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "char:eri",
+    "neg:quality",
+    "topic:arrival"
+   ],
+   "tone": "negative",
+   "toneBasis": "body"
   },
   {
    "id": "19684173",
@@ -1009,7 +1352,19 @@
    "otherGroup": "수령했으나 지적 사항 있음",
    "finishIssue": [
     "먼지·부스러기"
-   ]
+   ],
+   "tags": [
+    "char:kanoe",
+    "neg:broken",
+    "neg:finish",
+    "pos:intact",
+    "topic:arrival",
+    "topic:figure",
+    "topic:mug",
+    "topic:thermal"
+   ],
+   "tone": "mixed",
+   "toneBasis": "body"
   },
   {
    "id": "19684330",
@@ -1026,7 +1381,15 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684330",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "char:kanoe",
+    "neg:broken",
+    "topic:arrival",
+    "topic:mug"
+   ],
+   "tone": "negative",
+   "toneBasis": "title"
   },
   {
    "id": "19684213",
@@ -1043,7 +1406,15 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684213",
    "relation": "해당 없음 또는 미확인",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "neg:broken",
+    "neg:cushioning",
+    "scope:offtopic",
+    "topic:goods"
+   ],
+   "tone": "neutral",
+   "toneBasis": "body"
   },
   {
    "id": "19684229",
@@ -1060,7 +1431,17 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684229",
    "relation": "해당 없음 또는 미확인",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "neg:broken",
+    "neg:cushioning",
+    "pos:satisfied",
+    "scope:offtopic",
+    "topic:arrival",
+    "topic:goods"
+   ],
+   "tone": "neutral",
+   "toneBasis": "body"
   },
   {
    "id": "19684249",
@@ -1077,7 +1458,14 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684249",
    "relation": "해당 없음 또는 미확인",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "line:winter",
+    "scope:offtopic",
+    "topic:goods"
+   ],
+   "tone": "neutral",
+   "toneBasis": "body"
   },
   {
    "id": "187627121",
@@ -1094,7 +1482,16 @@
    "url": "https://arca.live/b/bluearchive/187627121",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [
+    "char:eri",
+    "char:kanoe",
+    "neg:broken",
+    "topic:arrival",
+    "topic:goods"
+   ],
+   "tone": "negative",
+   "toneBasis": "title"
   },
   {
    "id": "187627340",
@@ -1111,7 +1508,13 @@
    "url": "https://arca.live/b/bluearchive/187627340",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [
+    "neg:broken",
+    "neg:cushioning"
+   ],
+   "tone": "negative",
+   "toneBasis": "title"
   },
   {
    "id": "187630478",
@@ -1128,7 +1531,15 @@
    "url": "https://arca.live/b/bluearchive/187630478",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [
+    "char:kanoe",
+    "pos:function",
+    "topic:mug",
+    "topic:thermal"
+   ],
+   "tone": "positive",
+   "toneBasis": "title"
   },
   {
    "id": "19684419",
@@ -1151,7 +1562,17 @@
    "otherGroup": "수령했으나 지적 사항 있음",
    "finishIssue": [
     "완충재 없음"
-   ]
+   ],
+   "tags": [
+    "neg:broken",
+    "neg:cushioning",
+    "neg:finish",
+    "pos:intact",
+    "topic:arrival",
+    "topic:mug"
+   ],
+   "tone": "mixed",
+   "toneBasis": "body"
   },
   {
    "id": "187631829",
@@ -1168,7 +1589,15 @@
    "url": "https://arca.live/b/bluearchive/187631829",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [
+    "char:kanoe",
+    "topic:arrival",
+    "topic:figure",
+    "topic:mug"
+   ],
+   "tone": "neutral",
+   "toneBasis": "title"
   },
   {
    "id": "187632461",
@@ -1185,7 +1614,15 @@
    "url": "https://arca.live/b/bluearchive/187632461",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [
+    "char:kanoe",
+    "neg:broken",
+    "topic:mug",
+    "topic:photocard"
+   ],
+   "tone": "negative",
+   "toneBasis": "title"
   },
   {
    "id": "187632579",
@@ -1202,7 +1639,14 @@
    "url": "https://arca.live/b/bluearchive/187632579",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [
+    "char:eri",
+    "topic:arrival",
+    "topic:pillow"
+   ],
+   "tone": "neutral",
+   "toneBasis": "title"
   },
   {
    "id": "187627414",
@@ -1219,7 +1663,13 @@
    "url": "https://arca.live/b/bluearchive/187627414",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [
+    "char:eri",
+    "topic:arrival"
+   ],
+   "tone": "neutral",
+   "toneBasis": "title"
   },
   {
    "id": "19684494",
@@ -1241,7 +1691,20 @@
    "finishIssue": [
     "완충재 없음",
     "피규어 조립부 빡빡함"
-   ]
+   ],
+   "tags": [
+    "char:kanoe",
+    "neg:assembly",
+    "neg:broken",
+    "neg:cushioning",
+    "neg:finish",
+    "pos:intact",
+    "topic:arrival",
+    "topic:figure",
+    "topic:mug"
+   ],
+   "tone": "mixed",
+   "toneBasis": "body"
   },
   {
    "id": "19684562",
@@ -1262,7 +1725,17 @@
    "otherGroup": "수령했으나 지적 사항 있음",
    "finishIssue": [
     "보호필름 한쪽 면만 부착"
-   ]
+   ],
+   "tags": [
+    "char:kanoe",
+    "neg:broken",
+    "neg:finish",
+    "pos:intact",
+    "topic:figure",
+    "topic:mug"
+   ],
+   "tone": "mixed",
+   "toneBasis": "body"
   },
   {
    "id": "19684636",
@@ -1280,7 +1753,16 @@
    "relation": "해당 없음 또는 미확인",
    "depth": "body",
    "timeKind": "posted",
-   "otherGroup": "미개봉 상태 도착"
+   "otherGroup": "미개봉 상태 도착",
+   "tags": [
+    "char:kanoe",
+    "neg:cushioning",
+    "pos:intact",
+    "topic:arrival",
+    "topic:mug"
+   ],
+   "tone": "positive",
+   "toneBasis": "body"
   },
   {
    "id": "19684645",
@@ -1304,7 +1786,18 @@
    "finishIssue": [
     "완충재 없음",
     "택배 상자 눌림"
-   ]
+   ],
+   "tags": [
+    "char:kanoe",
+    "neg:broken",
+    "neg:cushioning",
+    "neg:finish",
+    "pos:intact",
+    "topic:arrival",
+    "topic:mug"
+   ],
+   "tone": "mixed",
+   "toneBasis": "body"
   },
   {
    "id": "19684738",
@@ -1321,7 +1814,15 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684738",
    "relation": "타인 인용·비판",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "line:winter",
+    "neg:quality",
+    "neg:vendor",
+    "topic:goods"
+   ],
+   "tone": "negative",
+   "toneBasis": "body"
   },
   {
    "id": "19684613",
@@ -1338,7 +1839,19 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684613",
    "relation": "해당 없음 또는 미확인",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "neg:broken",
+    "neg:cushioning",
+    "scope:offtopic",
+    "topic:arrival",
+    "topic:goods",
+    "topic:mug",
+    "topic:pillow",
+    "topic:thermal"
+   ],
+   "tone": "neutral",
+   "toneBasis": "body"
   },
   {
    "id": "19684731",
@@ -1355,7 +1868,15 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684731",
    "relation": "해당 없음 또는 미확인",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "char:kanoe",
+    "scope:offtopic",
+    "topic:arrival",
+    "topic:goods"
+   ],
+   "tone": "neutral",
+   "toneBasis": "body"
   },
   {
    "id": "187637366",
@@ -1372,7 +1893,14 @@
    "url": "https://arca.live/b/bluearchive/187637366",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [
+    "char:kanoe",
+    "neg:broken",
+    "topic:mug"
+   ],
+   "tone": "negative",
+   "toneBasis": "title"
   },
   {
    "id": "187636915",
@@ -1389,7 +1917,19 @@
    "url": "https://arca.live/b/bluearchive/187636915",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [
+    "line:winter",
+    "scope:offtopic",
+    "topic:arrival",
+    "topic:goods",
+    "topic:mug",
+    "topic:pillow",
+    "topic:thermal",
+    "vendor:wahun"
+   ],
+   "tone": "neutral",
+   "toneBasis": "title"
   },
   {
    "id": "19684836",
@@ -1409,7 +1949,17 @@
    "relation": "해당 없음 또는 미확인",
    "depth": "body",
    "timeKind": "posted",
-   "otherGroup": "사진으로 정상 확인"
+   "otherGroup": "사진으로 정상 확인",
+   "tags": [
+    "char:kanoe",
+    "neg:broken",
+    "pos:intact",
+    "topic:arrival",
+    "topic:figure",
+    "topic:mug"
+   ],
+   "tone": "positive",
+   "toneBasis": "body"
   },
   {
    "id": "19684909",
@@ -1430,7 +1980,16 @@
    "relation": "해당 없음 또는 미확인",
    "depth": "body",
    "timeKind": "posted",
-   "otherGroup": "사진으로 정상 확인"
+   "otherGroup": "사진으로 정상 확인",
+   "tags": [
+    "neg:broken",
+    "pos:function",
+    "pos:intact",
+    "topic:arrival",
+    "topic:mug"
+   ],
+   "tone": "positive",
+   "toneBasis": "body"
   },
   {
    "id": "19685048",
@@ -1450,7 +2009,18 @@
    "relation": "해당 없음 또는 미확인",
    "caseTitle": "머그컵 색상·도색 편차",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "char:kanoe",
+    "neg:broken",
+    "neg:cushioning",
+    "neg:finish",
+    "topic:arrival",
+    "topic:figure",
+    "topic:mug"
+   ],
+   "tone": "negative",
+   "toneBasis": "body"
   },
   {
    "id": "19684925",
@@ -1467,7 +2037,15 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684925",
    "relation": "해당 없음 또는 미확인",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "scope:offtopic",
+    "topic:arrival",
+    "topic:goods",
+    "topic:mug"
+   ],
+   "tone": "neutral",
+   "toneBasis": "body"
   },
   {
    "id": "19684998",
@@ -1484,7 +2062,15 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684998",
    "relation": "해당 없음 또는 미확인",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "char:kanoe",
+    "neg:cushioning",
+    "scope:offtopic",
+    "topic:goods"
+   ],
+   "tone": "neutral",
+   "toneBasis": "body"
   },
   {
    "id": "19685072",
@@ -1501,7 +2087,15 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19685072",
    "relation": "해당 없음 또는 미확인",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "char:eri",
+    "scope:offtopic",
+    "topic:goods",
+    "topic:pillow"
+   ],
+   "tone": "neutral",
+   "toneBasis": "body"
   },
   {
    "id": "187639616",
@@ -1518,7 +2112,14 @@
    "url": "https://arca.live/b/bluearchive/187639616",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [
+    "neg:broken",
+    "topic:mug",
+    "topic:thermal"
+   ],
+   "tone": "negative",
+   "toneBasis": "title"
   },
   {
    "id": "187641038",
@@ -1535,7 +2136,13 @@
    "url": "https://arca.live/b/bluearchive/187641038",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [
+    "neg:assembly",
+    "topic:goods"
+   ],
+   "tone": "negative",
+   "toneBasis": "title"
   },
   {
    "id": "187641898",
@@ -1552,7 +2159,14 @@
    "url": "https://arca.live/b/bluearchive/187641898",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [
+    "char:eri",
+    "topic:arrival",
+    "topic:goods"
+   ],
+   "tone": "neutral",
+   "toneBasis": "title"
   },
   {
    "id": "187642269",
@@ -1569,7 +2183,14 @@
    "url": "https://arca.live/b/bluearchive/187642269",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [
+    "char:eri",
+    "neg:broken",
+    "topic:pillow"
+   ],
+   "tone": "negative",
+   "toneBasis": "title"
   },
   {
    "id": "19685094",
@@ -1589,7 +2210,19 @@
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19685094",
    "relation": "해당 없음 또는 미확인",
    "depth": "body",
-   "timeKind": "posted"
+   "timeKind": "posted",
+   "tags": [
+    "char:kanoe",
+    "neg:broken",
+    "neg:cushioning",
+    "neg:finish",
+    "neg:quality",
+    "topic:arrival",
+    "topic:figure",
+    "topic:mug"
+   ],
+   "tone": "negative",
+   "toneBasis": "body"
   },
   {
    "id": "19685188",
@@ -1610,7 +2243,19 @@
    "otherGroup": "수령했으나 지적 사항 있음",
    "finishIssue": [
     "포토카드 점착테이프 부착"
-   ]
+   ],
+   "tags": [
+    "char:kanoe",
+    "neg:broken",
+    "neg:finish",
+    "pos:function",
+    "pos:intact",
+    "topic:arrival",
+    "topic:mug",
+    "topic:photocard"
+   ],
+   "tone": "mixed",
+   "toneBasis": "body"
   },
   {
    "id": "19685259",
@@ -1631,7 +2276,20 @@
    "otherGroup": "수령했으나 지적 사항 있음",
    "finishIssue": [
     "포토카드 포장 외부 부착"
-   ]
+   ],
+   "tags": [
+    "neg:broken",
+    "neg:cushioning",
+    "neg:finish",
+    "pos:intact",
+    "topic:arrival",
+    "topic:mug",
+    "topic:photocard",
+    "topic:pillow",
+    "vendor:inteco"
+   ],
+   "tone": "mixed",
+   "toneBasis": "body"
   },
   {
    "id": "19685346",
@@ -1651,7 +2309,20 @@
    "relation": "해당 없음 또는 미확인",
    "depth": "body",
    "timeKind": "posted",
-   "otherGroup": "수령했으나 지적 사항 있음"
+   "otherGroup": "수령했으나 지적 사항 있음",
+   "tags": [
+    "char:kanoe",
+    "neg:assembly",
+    "neg:broken",
+    "neg:cushioning",
+    "neg:finish",
+    "pos:intact",
+    "topic:arrival",
+    "topic:figure",
+    "topic:mug"
+   ],
+   "tone": "mixed",
+   "toneBasis": "body"
   },
   {
    "id": "19685356",
@@ -1675,7 +2346,20 @@
    "otherGroup": "수령했으나 지적 사항 있음",
    "finishIssue": [
     "포토카드 포장 외부 부착"
-   ]
+   ],
+   "tags": [
+    "neg:cushioning",
+    "neg:finish",
+    "pos:intact",
+    "topic:arrival",
+    "topic:goods",
+    "topic:mug",
+    "topic:photocard",
+    "topic:pillow",
+    "vendor:inteco"
+   ],
+   "tone": "mixed",
+   "toneBasis": "body"
   },
   {
    "id": "19685364",
@@ -1699,7 +2383,18 @@
    "finishIssue": [
     "완충재 없음",
     "상자가 내용물에 딱 맞음"
-   ]
+   ],
+   "tags": [
+    "char:kanoe",
+    "neg:broken",
+    "neg:cushioning",
+    "neg:finish",
+    "pos:intact",
+    "topic:arrival",
+    "topic:mug"
+   ],
+   "tone": "mixed",
+   "toneBasis": "body"
   },
   {
    "id": "187643749",
@@ -1716,7 +2411,13 @@
    "url": "https://arca.live/b/bluearchive/187643749",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [
+    "char:kanoe",
+    "topic:mug"
+   ],
+   "tone": "neutral",
+   "toneBasis": "title"
   },
   {
    "id": "187644220",
@@ -1733,7 +2434,14 @@
    "url": "https://arca.live/b/bluearchive/187644220",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [
+    "char:kanoe",
+    "topic:figure",
+    "topic:mug"
+   ],
+   "tone": "neutral",
+   "toneBasis": "title"
   },
   {
    "id": "187645843",
@@ -1750,7 +2458,13 @@
    "url": "https://arca.live/b/bluearchive/187645843",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [
+    "char:kanoe",
+    "topic:figure"
+   ],
+   "tone": "neutral",
+   "toneBasis": "title"
   },
   {
    "id": "187646111",
@@ -1767,7 +2481,15 @@
    "url": "https://arca.live/b/bluearchive/187646111",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [
+    "char:kanoe",
+    "neg:broken",
+    "topic:arrival",
+    "topic:mug"
+   ],
+   "tone": "negative",
+   "toneBasis": "title"
   },
   {
    "id": "187647006",
@@ -1784,7 +2506,13 @@
    "url": "https://arca.live/b/bluearchive/187647006",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
-   "timeKind": "found"
+   "timeKind": "found",
+   "tags": [
+    "topic:arrival",
+    "topic:mug"
+   ],
+   "tone": "neutral",
+   "toneBasis": "title"
   }
  ]
 }
