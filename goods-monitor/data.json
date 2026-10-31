@@ -1,7 +1,7 @@
 {
- "observedAt": "2026-10-31 22:06까지 확인 (분류 근거를 기록한 글 112건)",
- "updatedAt": "2026-10-31T22:15+09:00",
- "imageCount": 16,
+ "observedAt": "2026-10-31 23:06까지 확인 (분류 근거를 기록한 글 115건)",
+ "updatedAt": "2026-10-31T23:15+09:00",
+ "imageCount": 18,
  "coverage": "정상 수령 보고가 늘어난 것이 앞서 확인된 파손 사례를 상쇄하지는 않습니다. 두 수치는 분리해 보아야 합니다. 아카라이브는 글 목록만 확인했고 글 하나하나는 접근이 막혀 내용과 사진을 확인하지 못했습니다. 엑스(옛 트위터)는 이번 점검 범위에 들어 있지 않습니다.",
  "photos": [
   {
@@ -67,6 +67,14 @@
   {
    "file": "19685962-1.jpg",
    "label": "정상 수령 사례 · 모자 베개와 목베개를 펼쳐 둔 보관 요령 사진(비교용)"
+  },
+  {
+   "file": "19686803-1.jpg",
+   "label": "포토카드 상태 불만 ④ · 완충재 없이 상자에 담겨 온 모자 베개"
+  },
+  {
+   "file": "19686803-2.jpg",
+   "label": "포토카드 상태 불만 ④ · 제품 비닐 겉면에 붙은 채 배송된 포토카드와 함께 담긴 머그컵 상자"
   }
  ],
  "posts": [
@@ -2832,7 +2840,8 @@
     "포장 상자 찢김",
     "포토카드 구김",
     "완충재 없음"
-   ]
+   ],
+   "caseTitle": "포토카드 상태 불만 ③"
   },
   {
    "id": "19686324",
@@ -2852,11 +2861,12 @@
     "char:eri",
     "neg:broken",
     "neg:cushioning",
+    "pos:intact",
     "topic:arrival",
     "topic:goods",
     "topic:pillow"
    ],
-   "tone": "negative",
+   "tone": "positive",
    "toneBasis": "body",
    "depth": "body",
    "timeKind": "posted",
@@ -2880,10 +2890,11 @@
     "char:eri",
     "neg:broken",
     "neg:cushioning",
+    "pos:intact",
     "topic:arrival",
     "topic:pillow"
    ],
-   "tone": "negative",
+   "tone": "positive",
    "toneBasis": "body",
    "depth": "body",
    "timeKind": "posted",
@@ -2958,6 +2969,91 @@
    "toneBasis": "title",
    "depth": "title",
    "timeKind": "found"
+  },
+  {
+   "id": "19686803",
+   "title": "에리 모자 왔는데",
+   "time": "22:53",
+   "timeKind": "posted",
+   "platform": "DC projectmx",
+   "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19686803",
+   "case": "BA-PC-04",
+   "category": "pending",
+   "depth": "body",
+   "reason": "택배 상자에 완충재 없이 제품이 담겨 왔고 포토카드가 구겨졌다는 내용입니다. 첨부 사진 두 장을 직접 확인했습니다. 상자 안에 완충재가 보이지 않는 점, 포토카드가 제품 비닐 겉면에 붙은 채 베개 위에 놓여 있는 점, 같은 상자에 머그컵 상자가 함께 담긴 점까지는 사진으로 확인했습니다. 다만 포토카드의 구김 자체는 사진으로 판독되지 않아 주장으로만 기록하고 확인 중으로 두었습니다. 앞서 확인된 포토카드 사례들과는 작성자와 사진이 모두 달라 같은 사건으로 묶지 않았습니다. 포장 방식의 책임이 어디에 있는지는 판단하지 않았습니다.",
+   "photoRelation": "이 사건 고유 사진 2장 · 앞선 포토카드 사진과 피사체·배경 모두 다름",
+   "confidence": "글과 사진을 직접 확인",
+   "images": [
+    "19686803-1.jpg",
+    "19686803-2.jpg"
+   ],
+   "parent": null,
+   "relation": "해당 없음 또는 미확인",
+   "finishIssue": [
+    "완충재 없음",
+    "포토카드 구김"
+   ],
+   "tags": [
+    "char:eri",
+    "neg:cushioning",
+    "neg:finish",
+    "topic:arrival",
+    "topic:mug",
+    "topic:photocard",
+    "topic:pillow"
+   ],
+   "tone": "negative",
+   "toneBasis": "body",
+   "caseTitle": "포토카드 상태 불만 ④"
+  },
+  {
+   "id": "187666682",
+   "title": "머그컵 왔냐!!!",
+   "time": "22:24",
+   "timeKind": "found",
+   "platform": "arca.live",
+   "url": "https://arca.live/b/bluearchive/187666682",
+   "case": null,
+   "category": "pending",
+   "depth": "title",
+   "reason": "아카라이브 글 목록에서 제목만 확보했습니다. 제목으로는 머그컵 도착 여부를 묻는 글로 읽히지만 상품 상태에 대한 내용인지와 그 근거는 확인하지 못했습니다.",
+   "photoRelation": "사진을 확인하지 못함",
+   "confidence": "목록에서 제목만 확인",
+   "images": [],
+   "parent": null,
+   "relation": "해당 없음 또는 미확인",
+   "tags": [
+    "topic:arrival",
+    "topic:mug"
+   ],
+   "tone": "neutral",
+   "toneBasis": "title"
+  },
+  {
+   "id": "187665636",
+   "title": "에리 담요랑 카노에 머그컵 오픈",
+   "time": "22:14",
+   "timeKind": "found",
+   "platform": "arca.live",
+   "url": "https://arca.live/b/bluearchive/187665636",
+   "case": null,
+   "category": "pending",
+   "depth": "title",
+   "reason": "아카라이브 글 목록에서 제목만 확보했습니다. 제목으로는 받은 굿즈를 개봉했다는 글로 읽히지만 상품 상태에 대한 내용인지와 그 근거는 확인하지 못했습니다.",
+   "photoRelation": "사진을 확인하지 못함",
+   "confidence": "목록에서 제목만 확인",
+   "images": [],
+   "parent": null,
+   "relation": "해당 없음 또는 미확인",
+   "tags": [
+    "char:eri",
+    "char:kanoe",
+    "topic:arrival",
+    "topic:goods",
+    "topic:mug"
+   ],
+   "tone": "neutral",
+   "toneBasis": "title"
   }
  ]
 }
