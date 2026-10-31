@@ -1,6 +1,6 @@
 {
- "observedAt": "2026-11-01 07:06까지 확인 (분류 근거를 기록한 글 121건)",
- "updatedAt": "2026-11-01T07:10+09:00",
+ "observedAt": "2026-11-01 08:06까지 확인 (분류 근거를 기록한 글 122건)",
+ "updatedAt": "2026-11-01T08:07+09:00",
  "imageCount": 21,
  "coverage": "정상 수령 보고가 늘어난 것이 앞서 확인된 파손 사례를 상쇄하지는 않습니다. 두 수치는 분리해 보아야 합니다. 아카라이브는 글 목록만 확인했고 글 하나하나는 접근이 막혀 내용과 사진을 확인하지 못했습니다. 엑스(옛 트위터)는 이번 점검 범위에 들어 있지 않습니다.",
  "photos": [
@@ -3233,6 +3233,36 @@
    ],
    "tone": "negative",
    "toneBasis": "title"
+  },
+  {
+   "id": "19688435",
+   "title": "에리 모자 왔는데",
+   "time": "07:17",
+   "timeKind": "posted",
+   "platform": "DC projectmx",
+   "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19688435",
+   "case": null,
+   "category": "other",
+   "depth": "body",
+   "reason": "에리 모자 베개를 받아 써 본 뒤 크기가 너무 크고 눈이 가린다고 적은 글입니다. 파손이나 포장, 조립에 대한 불만은 적혀 있지 않고 사진도 없습니다. 착용 크기에 대한 지적이므로 피해 집계에는 넣지 않았습니다.",
+   "photoRelation": "사진 없음",
+   "confidence": "글 내용을 직접 확인",
+   "images": [],
+   "parent": null,
+   "relation": "해당 없음 또는 미확인",
+   "otherGroup": "수령했으나 지적 사항 있음",
+   "tags": [
+    "char:eri",
+    "neg:broken",
+    "neg:cushioning",
+    "neg:finish",
+    "pos:intact",
+    "topic:arrival",
+    "topic:figure",
+    "topic:pillow"
+   ],
+   "tone": "mixed",
+   "toneBasis": "body"
   }
  ]
 }
