@@ -1,8 +1,8 @@
 {
- "observedAt": "2026-10-31 18:07까지 확인 (분류 근거를 기록한 글 85건)",
- "updatedAt": "2026-10-31T18:20+09:00",
- "imageCount": 10,
- "coverage": "정상 수령 보고가 늘어난 것이 앞서 확인된 파손 사례를 상쇄하지는 않습니다. 두 수치는 분리해 보아야 합니다.",
+ "observedAt": "2026-10-31 19:05까지 확인 (분류 근거를 기록한 글 96건)",
+ "updatedAt": "2026-10-31T19:25+09:00",
+ "imageCount": 13,
+ "coverage": "정상 수령 보고가 늘어난 것이 앞서 확인된 파손 사례를 상쇄하지는 않습니다. 두 수치는 분리해 보아야 합니다. 아카라이브는 글 목록만 확인했고 글 하나하나는 접근이 막혀 내용과 사진을 확인하지 못했습니다. 엑스(옛 트위터)는 이번 점검 범위에 들어 있지 않습니다.",
  "photos": [
   {
    "file": "19683196-0.jpg",
@@ -43,6 +43,18 @@
   {
    "file": "19685048-0.jpg",
    "label": "색상 확인 중 · 피규어 머리 장식의 짙고 옅은 색 차이"
+  },
+  {
+   "file": "19685364-0.jpg",
+   "label": "정상 수령 사례 · 완충재 없는 상자에서 멀쩡히 나온 머그컵(비교용)"
+  },
+  {
+   "file": "19685094-0.jpg",
+   "label": "확인 중 · 머리카락 조형과 머리끈 장식 도색이 아쉽다는 피규어 근접 사진"
+  },
+  {
+   "file": "19685356-0.jpg",
+   "label": "정상 수령 사례 · 받은 마녀 모자를 씌워 본 사진"
   }
  ],
  "posts": [
@@ -1555,6 +1567,221 @@
    "confidence": "목록에서 제목만 확인",
    "platform": "arca.live",
    "url": "https://arca.live/b/bluearchive/187642269",
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "found"
+  },
+  {
+   "id": "19685094",
+   "title": "카노에 컵 뭔가 대충 생겼네",
+   "time": "18:01",
+   "category": "pending",
+   "reason": "직접 수령한 머그컵 피규어를 가까이 찍은 사진 2장과 함께, 얼굴 인쇄에 비해 머리카락 조형이 거칠고 머리끈 장식 도색이 번져 있다는 지적이 올라왔습니다. 사진에서 깨짐이나 포장 손상은 보이지 않습니다. 품질을 어디서부터 불량으로 볼지는 보는 사람마다 달라, 불량 여부를 판단하지 않고 확인 중으로 두었습니다.",
+   "case": "BA-FIN-01",
+   "images": [
+    "19685094-0.jpg",
+    "19685094-1.jpg"
+   ],
+   "parent": null,
+   "photoRelation": "기존 사진과 겹치지 않는 새 장면(직접 눈으로 확인)",
+   "confidence": "글과 사진을 직접 확인 · 품질 평가는 작성자 기준",
+   "platform": "DC projectmx",
+   "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19685094",
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted"
+  },
+  {
+   "id": "19685188",
+   "title": "까까컵 후기!",
+   "time": "18:17",
+   "category": "other",
+   "reason": "뜨거운 물을 부으니 그림이 드러나는 기능이 제대로 작동했고 제품에 문제가 없었다는 수령 후기입니다. 다만 포토카드와 쿠폰이 양면테이프로 붙어 있어 떼어내기 어려웠다는 지적이 함께 있습니다. 앞서 올라온 파손 사례를 전해 들었다는 언급이 있으나 본인 피해를 말한 것은 아닙니다.",
+   "case": null,
+   "images": [],
+   "parent": null,
+   "photoRelation": "글에 사진이 있으나 따로 확인하지 않음",
+   "confidence": "글 내용을 직접 확인",
+   "platform": "DC projectmx",
+   "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19685188",
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted",
+   "otherGroup": "수령했으나 지적 사항 있음",
+   "finishIssue": [
+    "포토카드 점착테이프 부착"
+   ]
+  },
+  {
+   "id": "19685259",
+   "title": "인테코 모자랑 컵왔다",
+   "time": "18:32",
+   "category": "other",
+   "reason": "모자와 머그컵을 받았다는 글이며 파손이나 깨짐 주장은 들어 있지 않습니다. 포토카드를 포장 바깥쪽에 붙여 놓은 방식을 문제로 지적했습니다.",
+   "case": null,
+   "images": [],
+   "parent": null,
+   "photoRelation": "사진 없음",
+   "confidence": "글 내용을 직접 확인",
+   "platform": "DC projectmx",
+   "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19685259",
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted",
+   "otherGroup": "수령했으나 지적 사항 있음",
+   "finishIssue": [
+    "포토카드 포장 외부 부착"
+   ]
+  },
+  {
+   "id": "19685346",
+   "title": "까노에컵 온거 뜯어봤는데 팬티 미구현이네",
+   "time": "18:47",
+   "category": "other",
+   "reason": "피규어 뚜껑 아래쪽 조형이 통짜로 메워져 있다는 지적입니다. 사진에서 깨짐이나 갈라짐은 보이지 않으며, 포장이나 배송 문제와는 관계가 없는 조형 취향에 대한 이야기로 보았습니다.",
+   "case": null,
+   "images": [
+    "19685346-0.jpg"
+   ],
+   "parent": null,
+   "photoRelation": "이 글 고유 사진 · 파손은 보이지 않음",
+   "confidence": "글 내용과 사진을 모두 직접 확인",
+   "platform": "DC projectmx",
+   "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19685346",
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted",
+   "otherGroup": "수령했으나 지적 사항 있음"
+  },
+  {
+   "id": "19685356",
+   "title": "인테코 굿즈실물",
+   "time": "18:50",
+   "category": "other",
+   "reason": "바로 앞 글과 같은 계정이 올린 상세 후기입니다. 모자와 머그컵 사진 2장에서 손상은 보이지 않습니다. 모자의 가리개가 얼굴을 거의 다 덮는다는 점과 포토카드를 포장 바깥에 테이프로 붙여 놓은 점을 지적했고, 목베개는 솜이 아니라 공기를 넣는 구조이며 수납이 편하다고 평가했습니다. 같은 사람의 글이므로 수령자 수를 따로 세지 않았습니다.",
+   "case": null,
+   "images": [
+    "19685356-0.jpg",
+    "19685356-1.jpg"
+   ],
+   "parent": "19685259",
+   "photoRelation": "같은 작성자의 추가 촬영 · 파손은 보이지 않음",
+   "confidence": "글 내용과 사진을 모두 직접 확인",
+   "platform": "DC projectmx",
+   "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19685356",
+   "relation": "본인 후속",
+   "depth": "body",
+   "timeKind": "posted",
+   "otherGroup": "수령했으나 지적 사항 있음",
+   "finishIssue": [
+    "포토카드 포장 외부 부착"
+   ]
+  },
+  {
+   "id": "19685364",
+   "title": "까노에컵 다행히 무사히 왔다",
+   "time": "18:51",
+   "category": "other",
+   "reason": "무사히 도착했다는 수령 글이며 사진에서 컵에 손상이 없는 것을 확인했습니다. 상자가 내용물에 딱 맞고 완충재는 들어 있지 않았다고 적었습니다. 앞서 파손을 알린 글들과 같은 포장 조건에서 멀쩡히 도착한 사례이므로, 포장이 파손의 원인이라고 단정할 근거로는 아직 부족하다고 보았습니다.",
+   "case": null,
+   "images": [
+    "19685364-0.jpg"
+   ],
+   "parent": null,
+   "photoRelation": "기존 사진과 겹치지 않는 새 장면(직접 눈으로 확인)",
+   "confidence": "글 내용과 사진을 모두 직접 확인",
+   "platform": "DC projectmx",
+   "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19685364",
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted",
+   "otherGroup": "수령했으나 지적 사항 있음",
+   "finishIssue": [
+    "완충재 없음",
+    "상자가 내용물에 딱 맞음"
+   ]
+  },
+  {
+   "id": "187643749",
+   "title": "카노에 머그컵 오긴했는데 약간 느낌이 그거임",
+   "time": "18:17",
+   "category": "pending",
+   "reason": "아카라이브 글 목록에서 제목만 확보했다. 제목상 머그컵을 받고 아쉬움을 말하는 글로 보이지만, 무엇이 아쉬웠는지는 글을 열어 보지 못해 확인하지 못했다.",
+   "case": null,
+   "images": [],
+   "parent": null,
+   "photoRelation": "사진을 확인하지 못함",
+   "confidence": "목록에서 제목만 확인",
+   "platform": "arca.live",
+   "url": "https://arca.live/b/bluearchive/187643749",
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "found"
+  },
+  {
+   "id": "187644220",
+   "title": "카노에 머그컵 피규어 딱 생각한 정도의 퀄리티네",
+   "time": "18:22",
+   "category": "pending",
+   "reason": "아카라이브 글 목록에서 제목만 확보했다. 제목상 피규어 품질에 대한 감상으로 보이나, 좋게 본 것인지 아쉬워한 것인지와 그 근거는 확인하지 못했다.",
+   "case": null,
+   "images": [],
+   "parent": null,
+   "photoRelation": "사진을 확인하지 못함",
+   "confidence": "목록에서 제목만 확인",
+   "platform": "arca.live",
+   "url": "https://arca.live/b/bluearchive/187644220",
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "found"
+  },
+  {
+   "id": "187645843",
+   "title": "카노에 헤일로 포기",
+   "time": "18:41",
+   "category": "pending",
+   "reason": "아카라이브 글 목록에서 제목만 확보했다. 제목상 피규어 머리 장식을 끼우는 것을 포기했다는 뜻으로 읽히지만, 조립이 안 되는 상황인지 단순한 선택인지 확인하지 못했다. 조립 관련 사건과 묶을지는 글 내용을 본 뒤에 정한다.",
+   "case": null,
+   "images": [],
+   "parent": null,
+   "photoRelation": "사진을 확인하지 못함",
+   "confidence": "목록에서 제목만 확인",
+   "platform": "arca.live",
+   "url": "https://arca.live/b/bluearchive/187645843",
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "found"
+  },
+  {
+   "id": "187646111",
+   "title": "카노에 머그 왔다요",
+   "time": "18:44",
+   "category": "pending",
+   "reason": "아카라이브 글 목록에서 제목만 확보했다. 제목상 머그컵이 도착했다는 수령 글로 보이며 파손 주장은 아니지만, 받은 상태는 확인하지 못했다.",
+   "case": null,
+   "images": [],
+   "parent": null,
+   "photoRelation": "사진을 확인하지 못함",
+   "confidence": "목록에서 제목만 확인",
+   "platform": "arca.live",
+   "url": "https://arca.live/b/bluearchive/187646111",
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "found"
+  },
+  {
+   "id": "187647006",
+   "title": "브부이도 머그컵이랑 배게 옴",
+   "time": "18:54",
+   "category": "pending",
+   "reason": "아카라이브 글 목록에서 제목만 확보했다. 제목상 머그컵과 베개를 함께 받았다는 수령 글로 보이나, 받은 상태는 확인하지 못했다.",
+   "case": null,
+   "images": [],
+   "parent": null,
+   "photoRelation": "사진을 확인하지 못함",
+   "confidence": "목록에서 제목만 확인",
+   "platform": "arca.live",
+   "url": "https://arca.live/b/bluearchive/187647006",
    "relation": "해당 없음 또는 미확인",
    "depth": "title",
    "timeKind": "found"
