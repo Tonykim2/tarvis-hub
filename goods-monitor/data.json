@@ -1,7 +1,7 @@
 {
- "observedAt": "2026-10-31 23:06까지 확인 (분류 근거를 기록한 글 115건)",
- "updatedAt": "2026-10-31T23:15+09:00",
- "imageCount": 18,
+ "observedAt": "2026-11-01 00:06까지 확인 (분류 근거를 기록한 글 120건)",
+ "updatedAt": "2026-11-01T00:20+09:00",
+ "imageCount": 21,
  "coverage": "정상 수령 보고가 늘어난 것이 앞서 확인된 파손 사례를 상쇄하지는 않습니다. 두 수치는 분리해 보아야 합니다. 아카라이브는 글 목록만 확인했고 글 하나하나는 접근이 막혀 내용과 사진을 확인하지 못했습니다. 엑스(옛 트위터)는 이번 점검 범위에 들어 있지 않습니다.",
  "photos": [
   {
@@ -75,6 +75,18 @@
   {
    "file": "19686803-2.jpg",
    "label": "포토카드 상태 불만 ④ · 제품 비닐 겉면에 붙은 채 배송된 포토카드와 함께 담긴 머그컵 상자"
+  },
+  {
+   "file": "19686849-1.jpg",
+   "label": "머그컵 내부 검은 점 자국 · 컵 안쪽 전면에 흩어진 작은 검은 반점"
+  },
+  {
+   "file": "19686969-2.jpg",
+   "label": "머그컵 내부 검은 점 자국 · 같은 컵을 다른 각도에서 본 안쪽 반점 분포"
+  },
+  {
+   "file": "19686969-1.jpg",
+   "label": "머그컵 내부 검은 점 자국 · 같은 컵 바깥면 인쇄 상태(번짐 없이 또렷함)"
   }
  ],
  "posts": [
@@ -3053,6 +3065,147 @@
     "topic:mug"
    ],
    "tone": "neutral",
+   "toneBasis": "title"
+  },
+  {
+   "id": "19686849",
+   "title": "까까 머그컵 이거 원래 이러냐",
+   "time": "23:01",
+   "timeKind": "posted",
+   "platform": "DC projectmx",
+   "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19686849",
+   "case": "BA-FIN-02",
+   "caseTitle": "머그컵 내부 검은 점 자국",
+   "category": "pending",
+   "depth": "body",
+   "reason": "컵 안쪽 흰 바탕에 검은 점 같은 자국이 여러 개 있고 닦아도 지워지지 않는다는 내용입니다. 첨부 사진 한 장을 직접 확인했습니다. 컵 안쪽 전면에 지름 1밀리미터 안팎의 검은 반점이 열 개 남짓 흩어져 있는 것은 사진으로 보입니다. 다만 정말 닦이지 않는 자국인지, 만드는 과정에서 생긴 것인지, 쓰는 데 영향이 있는지는 사진으로 판단할 수 없어 확인 중으로 두었습니다. 앞서 확인된 머그컵 파손 사례와는 현상이 달라 같은 사건으로 묶지 않았습니다. 원인이나 책임이 어디에 있는지는 판단하지 않았습니다.",
+   "photoRelation": "이 사건 고유 사진 1장 · 컵 안쪽을 찍은 장면",
+   "confidence": "글과 사진을 직접 확인",
+   "images": [
+    "19686849-1.jpg"
+   ],
+   "parent": null,
+   "relation": "해당 없음 또는 미확인",
+   "tags": [
+    "char:kanoe",
+    "neg:broken",
+    "topic:mug"
+   ],
+   "tone": "negative",
+   "toneBasis": "body",
+   "finishIssue": [
+    "컵 내부 검은 점 자국"
+   ]
+  },
+  {
+   "id": "19686969",
+   "title": "까슨배 머그컵 간단 후기.txt",
+   "time": "23:24",
+   "timeKind": "posted",
+   "platform": "DC projectmx",
+   "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19686969",
+   "case": "BA-FIN-02",
+   "caseTitle": "머그컵 내부 검은 점 자국",
+   "category": "repeat",
+   "depth": "body",
+   "reason": "앞 글과 같은 계정이 올린 종합 후기입니다. 첨부 사진 두 장을 직접 확인했습니다. 한 장은 컵 바깥면 인쇄로 번지거나 빠진 곳 없이 또렷했고, 다른 한 장은 앞 글과 다른 각도에서 찍은 컵 안쪽으로 검은 점이 스무 개 넘게 흩어져 있어 자국이 한 각도에만 있는 것이 아님을 보여 줍니다. 글에는 완충재 없이 배송됐지만 깨지지는 않았다는 내용과, 피규어 머리 장식이 절반 정도만 끼워진다는 내용도 함께 적혀 있습니다. 새로운 피해자가 아니라 같은 구매자의 후속 글이므로 사건 수에는 더하지 않았습니다.",
+   "photoRelation": "같은 컵을 다른 각도에서 찍은 추가 사진 2장",
+   "confidence": "글과 사진을 직접 확인",
+   "images": [
+    "19686969-1.jpg",
+    "19686969-2.jpg"
+   ],
+   "parent": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19686849",
+   "relation": "본인 후속",
+   "tags": [
+    "char:kanoe",
+    "neg:broken",
+    "neg:cushioning",
+    "topic:arrival",
+    "topic:figure",
+    "topic:mug"
+   ],
+   "tone": "negative",
+   "toneBasis": "body",
+   "finishIssue": [
+    "완충재 없음",
+    "피규어 조립부 빡빡함",
+    "컵 내부 검은 점 자국"
+   ]
+  },
+  {
+   "id": "19687041",
+   "title": "근데 머그컵 이거 원래 프린팅 보이는거임?",
+   "time": "23:39",
+   "timeKind": "posted",
+   "platform": "DC projectmx",
+   "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19687041",
+   "case": null,
+   "category": "pending",
+   "depth": "body",
+   "reason": "뜨거운 물을 붓지 않아도 밝은 곳에서는 그림이 비쳐 보인다는 관찰 글입니다. 원래 그런 제품인지 묻는 내용이며 파손이나 불량을 주장하지는 않았습니다. 앞서 컵 안쪽 자국을 올린 계정과 같은 계정이 올린 추가 관찰이라 따로 세지 않았습니다. 첨부 사진은 받아 두지 않아 상태를 눈으로 확인하지는 못했습니다.",
+   "photoRelation": "첨부 사진은 확인하지 않음",
+   "confidence": "글 내용을 직접 확인",
+   "images": [],
+   "parent": null,
+   "relation": "해당 없음 또는 미확인",
+   "tags": [
+    "neg:broken",
+    "neg:quality",
+    "topic:arrival",
+    "topic:mug"
+   ],
+   "tone": "negative",
+   "toneBasis": "body"
+  },
+  {
+   "id": "19687162",
+   "title": "에리모자 굿즈 다들 샀구나",
+   "time": "23:57",
+   "timeKind": "posted",
+   "platform": "DC projectmx",
+   "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19687162",
+   "case": null,
+   "category": "excluded",
+   "depth": "body",
+   "reason": "에리 모자 베개를 다들 샀느냐는 잡담 글입니다. 물건을 받았다거나 상태가 어떻다는 내용이 없어 집계에서 제외했습니다.",
+   "photoRelation": "해당 없음",
+   "confidence": "글 내용을 직접 확인",
+   "images": [],
+   "parent": null,
+   "relation": "해당 없음 또는 미확인",
+   "tags": [
+    "char:eri",
+    "scope:offtopic",
+    "topic:arrival",
+    "topic:goods",
+    "topic:pillow"
+   ],
+   "tone": "neutral",
+   "toneBasis": "body"
+  },
+  {
+   "id": "187674457",
+   "title": "카노에 머그컵 교환신청했다",
+   "time": "23:40",
+   "timeKind": "found",
+   "platform": "arca.live",
+   "url": "https://arca.live/b/bluearchive/187674457",
+   "case": null,
+   "category": "pending",
+   "depth": "title",
+   "reason": "아카라이브 글 목록에서 제목만 확보했습니다. 제목으로는 머그컵 교환을 신청했다는 글로 읽히지만, 어떤 이유로 신청했는지와 상품 상태는 확인하지 못했습니다.",
+   "photoRelation": "해당 없음",
+   "confidence": "목록에서 제목만 확인",
+   "images": [],
+   "parent": null,
+   "relation": "해당 없음 또는 미확인",
+   "tags": [
+    "char:kanoe",
+    "neg:exchange",
+    "topic:mug"
+   ],
+   "tone": "negative",
    "toneBasis": "title"
   }
  ]
