@@ -1,0 +1,297 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>블루아카이브 겨울 굿즈 배송 상태 — 관측 보고</title>
+<style>
+:root{--ink:#16202c;--dim:#5d6b7a;--line:#d7dee6;--soft:#f4f7fa;--hit:#b3261e;--wait:#8a5a00;--ok:#12624a}
+*{box-sizing:border-box}
+body{margin:0;background:#eef1f5;color:var(--ink);font:15px/1.72 "Noto Sans KR","Apple SD Gothic Neo",system-ui,sans-serif;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.sheet{max-width:860px;margin:22px auto 70px;background:#fff;padding:46px 52px 60px;box-shadow:0 2px 18px #0000001a}
+.bar{position:sticky;top:0;z-index:5;background:#16202cf2;color:#fff;padding:11px 16px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.bar b{font-size:14px;margin-right:auto}
+.bar button,.bar a{font:inherit;font-size:14px;border:1px solid #ffffff55;background:#ffffff14;color:#fff;border-radius:8px;padding:8px 13px;cursor:pointer;text-decoration:none}
+.bar button:hover,.bar a:hover{background:#ffffff2b}
+.bar button[disabled]{opacity:.55;cursor:default}
+.eyebrow{letter-spacing:.14em;font-size:11px;color:var(--dim);margin:0 0 10px}
+h1{font-size:28px;line-height:1.32;margin:0 0 14px;letter-spacing:-.4px}
+h2{font-size:19px;margin:38px 0 8px;padding-bottom:7px;border-bottom:2px solid var(--ink)}
+h3{font-size:16px;margin:20px 0 4px}
+.meta{color:var(--dim);font-size:13px;margin:0 0 26px;line-height:1.9}
+.meta b{color:var(--ink)}
+.lede{background:var(--soft);border-left:4px solid var(--ink);padding:16px 18px;margin:0 0 24px}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:0 0 12px}
+.tile{border:1px solid var(--line);border-radius:10px;padding:14px;text-align:center}
+.tile b{display:block;font-size:30px;line-height:1.2;letter-spacing:-1px}
+.tile span{display:block;font-size:12px;color:var(--dim);margin-top:3px}
+.tile.hit b{color:var(--hit)}.tile.wait b{color:var(--wait)}
+.caution{font-size:13px;color:var(--dim);border:1px dashed var(--line);border-radius:10px;padding:13px 15px;margin:0 0 6px}
+.case{border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:14px 0}
+.case.wait{border-left:4px solid var(--wait)}
+.case.hit{border-left:4px solid var(--hit)}
+.case h3{margin-top:0}
+.tag{display:inline-block;font-size:11px;background:var(--soft);border:1px solid var(--line);border-radius:5px;padding:2px 7px;margin:0 5px 5px 0;color:var(--dim)}
+.shot{margin:12px 0 0}
+.shot img{width:100%;max-width:420px;border:1px solid var(--line);border-radius:9px;display:block}
+.shot figcaption{font-size:12px;color:var(--dim);margin-top:5px}
+table{width:100%;border-collapse:collapse;font-size:13.5px;margin:10px 0}
+th,td{border-bottom:1px solid var(--line);padding:9px 8px;text-align:left;vertical-align:top}
+th{background:var(--soft);font-weight:600;white-space:nowrap}
+td.t{white-space:nowrap;color:var(--dim)}
+ul{padding-left:20px}li{margin:5px 0}
+a{color:#15509c}
+.foot{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim)}
+.err{color:var(--hit);font-weight:600}
+@media(max-width:700px){.sheet{margin:0;padding:26px 20px 44px;box-shadow:none}.tiles{grid-template-columns:repeat(2,1fr)}h1{font-size:23px}}
+@media print{
+ body{background:#fff}.bar{display:none}
+ .sheet{margin:0;padding:0;max-width:none;box-shadow:none}
+ h2{break-after:avoid}.case,figure,table{break-inside:avoid}
+ a{color:var(--ink);text-decoration:none}
+ @page{size:A4;margin:16mm 14mm}
+}
+</style></head><body>
+<div class="bar" id="bar">
+  <b>관측 보고 · 최신 자료 기준</b>
+  <button type="button" id="btnPdf">PDF로 저장</button>
+  <button type="button" id="btnFile">사진 포함 파일 하나로 저장</button>
+  <a href="./">대시보드로</a>
+</div>
+<div class="sheet" id="sheet">
+  <p class="eyebrow">공개 게시글 관측 보고</p>
+  <h1 id="title">블루아카이브 겨울 굿즈 배송 상태<br>— 현재까지 관측된 사항</h1>
+  <p class="meta" id="meta">자료를 불러오는 중입니다…</p>
+  <p class="err" id="err" role="alert"></p>
+  <div id="body"></div>
+</div>
+<script>
+const CASE_NAMES=[['MUG','머그컵 파손'],['PC','포토카드 상태 불만'],['PIL','목베개·모자 불량'],['BOX','포장 불량'],['ASSEMBLY','조립 불량'],['ASM','조립 불량']];
+const CIRCLED=['','①','②','③','④','⑤','⑥','⑦','⑧','⑨'];
+const PLATFORM={'DC':'디시인사이드','DC projectmx':'디시인사이드','arca':'아카라이브','arca.live':'아카라이브','아카라이브':'아카라이브'};
+const el=(t,x,c)=>{const e=document.createElement(t);if(x!==undefined)e.textContent=x;if(c)e.className=c;return e};
+const plat=p=>PLATFORM[p]||p;
+function safeUrl(u){return typeof u==='string'&&/^https:\/\/(gall\.dcinside\.com|arca\.live)\//.test(u)?u:null}
+function caseName(key,list){
+  const t=list.find(p=>p.caseTitle)?.caseTitle; if(t)return t;
+  const up=String(key).toUpperCase();
+  for(const [k,label] of CASE_NAMES) if(up.includes(k)) return label;
+  return String(key);
+}
+function groupCases(posts,cat){
+  const g=new Map();
+  for(const p of posts){ if(p.category!==cat) continue; if(!p.case) continue;
+    if(!g.has(p.case)) g.set(p.case,[]); g.get(p.case).push(p); }
+  return g;
+}
+function named(groups){
+  const base=new Map(),dup=new Map(),seen=new Map(),out=new Map();
+  for(const [k,l] of groups){const b=caseName(k,l);base.set(k,b);dup.set(b,(dup.get(b)||0)+1);}
+  for(const [k,b] of base){ if(dup.get(b)>1){const i=(seen.get(b)||0)+1;seen.set(b,i);out.set(k,b+' '+(CIRCLED[i]||i));} else out.set(k,b); }
+  return out;
+}
+function summary(groups){
+  const n=new Map();
+  for(const [k,l] of groups){const b=caseName(k,l);n.set(b,(n.get(b)||0)+1);}
+  return [...n].map(([b,c])=>b+' '+c+'건').join(' · ');
+}
+function figure(file,caption){
+  const f=document.createElement('figure');f.className='shot';
+  const im=el('img');im.src='images/'+file;im.alt=caption;im.dataset.file=file;
+  f.append(im,el('figcaption',caption));return f;
+}
+function linkRow(p){
+  const tr=document.createElement('tr');
+  tr.append(el('td',plat(p.platform)+' '+p.id,'t'),el('td',p.time,'t'));
+  const td=el('td');const u=safeUrl(p.url);
+  if(u){const a=el('a',p.title||'(제목 미확보)');a.href=u;a.target='_blank';a.rel='noopener noreferrer';td.append(a);}
+  else td.append(document.createTextNode(p.title||'(제목 미확보)'));
+  tr.append(td);return tr;
+}
+function section(root,title){root.append(el('h2',title));}
+function para(root,text,cls){root.append(el('p',text,cls));}
+
+function render(d){
+  const posts=d.posts||[], photoLabels=new Map((d.photos||[]).map(p=>[p.file,p.label]));
+  const related=posts.filter(p=>p.category!=='excluded');
+  const hits=groupCases(posts,'confirmed'), waits=groupCases(posts,'pending');
+  const hitNames=named(hits), waitNames=named(waits);
+  const shownPhotos=new Set();
+  const caseImages=new Map();
+  for(const p of posts){ if(!p.case) continue;
+    if(!caseImages.has(p.case)) caseImages.set(p.case,[]);
+    for(const f of (p.images||[])) if(!caseImages.get(p.case).includes(f)) caseImages.get(p.case).push(f); }
+  const normal=posts.filter(p=>p.category==='other');
+  const quoted=posts.filter(p=>p.category==='repeat');
+  const unread=posts.filter(p=>p.category==='pending'&&!p.case);
+
+  document.getElementById('meta').innerHTML=
+    '대상 상품: <b>에리 모자 베개 · 카노에 변온 머그컵</b><br>'
+    +'관측 기준: <b>'+esc(d.observedAt||'')+'</b><br>'
+    +'관측 대상: 디시인사이드 프로젝트MX 갤러리 · 아카라이브 블루아카이브 채널';
+
+  const root=document.getElementById('body');root.replaceChildren();
+
+  const lede=el('div',undefined,'lede');
+  lede.append(el('b','요약. '));
+  lede.append(document.createTextNode(
+    '상품 배송이 시작된 시점부터 위 기준 시각까지 관련 게시글 '+related.length+'건을 개별 확인했습니다. '
+    +'이 가운데 사진과 본문을 직접 대조해 '
+    +'서로 다른 피해로 판정한 사건은 '+hits.size+'건'+(hits.size?'('+summary(hits)+')':'')+'입니다. '
+    +(waits.size?'불량을 주장하나 근거가 부족해 검증 중인 사건이 '+waits.size+'건 별도로 있으며 위 숫자에 포함하지 않았습니다. ':'')
+    +'동일 사진이 반복 인용된 글은 하나의 사건으로 통합했습니다.'));
+  root.append(lede);
+
+  const tiles=el('div',undefined,'tiles');
+  [[posts.length,'관측 게시글'],[related.length,'관련 게시글'],[hits.size,'확인된 사건','hit'],[waits.size,'검증 중 사건','wait']]
+    .forEach(([v,label,cls])=>{const t=el('div',undefined,'tile'+(cls?' '+cls:''));t.append(el('b',String(v)),el('span',label));tiles.append(t)});
+  root.append(tiles);
+  para(root,'관련 게시글 '+related.length+'건은 피해 '+related.length+'건을 뜻하지 않습니다. 동일인이 연달아 올린 글, 타인의 사진을 인용한 비판 글, 아직 수령하지 않았다는 글이 함께 집계된 수치입니다. 피해 규모는 위 ‘확인된 사건’ 수치를 기준으로 판단해야 합니다.','caution');
+
+  section(root,'확인된 파손·불량 사건 '+hits.size+'건');
+  para(root,'사진과 본문을 직접 대조해 서로 다른 피해로 판정한 사건만 수록했습니다. 구매자 신원과 업체 책임은 확정하지 않았습니다.','caution');
+  if(!hits.size) para(root,'현재 기준으로 사진과 본문을 직접 확인한 파손 사건은 없습니다.');
+  for(const [key,list] of hits){
+    const c=el('div',undefined,'case hit');
+    c.append(el('h3',hitNames.get(key)));
+    const tags=el('p');
+    tags.append(el('span',plat(list[0].platform)+' '+list[0].time+' 최초 관측','tag'),
+                el('span','관련 게시글 '+list.length+'건','tag'),
+                el('span',list[0].photoRelation||'사진 관계 미기재','tag'));
+    c.append(tags);
+    for(const p of list) if(p.reason) c.append(el('p',p.reason));
+    for(const f of (caseImages.get(key)||[])) if(!shownPhotos.has(f)){shownPhotos.add(f);c.append(figure(f,photoLabels.get(f)||hitNames.get(key)+' 관련 사진'));}
+    const links=el('p');
+    for(const p of list){const u=safeUrl(p.url);if(!u)continue;
+      if(links.childNodes.length)links.append(document.createTextNode(' · '));
+      const a=el('a','원문 '+p.id);a.href=u;a.target='_blank';a.rel='noopener noreferrer';links.append(a);}
+    if(links.childNodes.length){links.prepend(document.createTextNode('원문: '));c.append(links);}
+    root.append(c);
+  }
+
+  if(waits.size){
+    section(root,'검증 중인 사건 '+waits.size+'건');
+    para(root,'불량·파손을 주장하는 글이지만 사진이나 본문을 끝까지 확인하지 못했습니다. 확인된 사건 수치에는 포함하지 않았습니다.','caution');
+    for(const [key,list] of waits){
+      const c=el('div',undefined,'case wait');
+      c.append(el('h3',waitNames.get(key)+' · 검증 중'));
+      const tags=el('p');
+      tags.append(el('span',plat(list[0].platform)+' '+list[0].time,'tag'),el('span','관련 게시글 '+list.length+'건','tag'));
+      c.append(tags);
+      for(const p of list) if(p.reason) c.append(el('p',p.reason));
+      const links=el('p');
+      for(const p of list){const u=safeUrl(p.url);if(!u)continue;
+        if(links.childNodes.length)links.append(document.createTextNode(' · '));
+        const a=el('a','원문 '+p.id);a.href=u;a.target='_blank';a.rel='noopener noreferrer';links.append(a);}
+      if(links.childNodes.length){links.prepend(document.createTextNode('원문: '));c.append(links);}
+      root.append(c);
+    }
+  }
+
+  const extra=(d.photos||[]).filter(p=>!shownPhotos.has(p.file));
+  if(extra.length){
+    section(root,'참고 사진 '+extra.length+'장');
+    para(root,'파손 사례 사진만 보면 실태가 한쪽으로 치우쳐 보입니다. 정상 수령 사례와 포장 상태 사진을 함께 수록합니다. 공개 가능 여부를 직접 확인한 사진만 사용했습니다.','caution');
+    for(const ph of extra){shownPhotos.add(ph.file);root.append(figure(ph.file,ph.label));}
+  }
+
+  section(root,'정상 수령 사례 '+normal.length+'건');
+  para(root,'파손 사례만 모아 보면 실태가 한쪽으로 치우쳐 보입니다. 같은 기간 정상 수령 보고도 함께 수록합니다.','caution');
+  if(normal.length){
+    const t=document.createElement('table');
+    t.innerHTML='<thead><tr><th>출처</th><th>시각</th><th>게시글 · 확인 내용</th></tr></thead>';
+    const tb=document.createElement('tbody');
+    for(const p of normal){
+      const tr=document.createElement('tr');
+      tr.append(el('td',plat(p.platform)+' '+p.id,'t'),el('td',p.time,'t'));
+      const td=el('td');const u=safeUrl(p.url);
+      if(u){const a=el('a',p.title||'(제목 미확보)');a.href=u;a.target='_blank';a.rel='noopener noreferrer';td.append(a);}
+      else td.append(document.createTextNode(p.title||'(제목 미확보)'));
+      if(p.reason)td.append(el('div',p.reason,'t'));
+      tr.append(td);tb.append(tr);
+    }
+    t.append(tb);root.append(t);
+  } else para(root,'현재 기준으로 정상 수령으로 분류한 게시글이 없습니다.');
+
+  section(root,'인용·비판 게시글 '+quoted.length+'건');
+  para(root,'타인의 사진이나 글을 인용해 비판한 글, 작성자 본인의 후속 글입니다. 새로운 피해로 집계하지 않았습니다.','caution');
+  if(quoted.length){
+    const t=document.createElement('table');
+    t.innerHTML='<thead><tr><th>출처</th><th>시각</th><th>게시글</th></tr></thead>';
+    const tb=document.createElement('tbody');for(const p of quoted)tb.append(linkRow(p));
+    t.append(tb);root.append(t);
+  }
+
+  section(root,'관측 범위와 한계');
+  para(root,'아래 사항을 함께 고려해 해석해야 합니다. 확인하지 못한 영역은 ‘피해가 없다’는 의미가 아닙니다.','caution');
+  if(d.coverage){const p=el('p',d.coverage);p.style.whiteSpace='pre-line';root.append(p);}
+  const lim=document.createElement('ul');
+  [ 'X(엑스)는 이번 관측 대상에서 제외했습니다. 로그인 없이 최신 게시글을 열람할 수 없어, 본 보고에는 X 게시글이 한 건도 포함되지 않았습니다.',
+    '아카라이브는 게시글 목록은 열람되나 개별 게시글 접근이 반복 차단되어, 제목까지만 확인된 글이 '+unread.length+'건 있습니다. 해당 글은 피해로 집계하지 않고 검증 대기로 분류했습니다.',
+    '디시인사이드 갤러리는 정상 열람했습니다. 다만 게시글이 삭제·수정되면 본 보고 내용과 달라질 수 있습니다.',
+    '구매자 신원, 주문 내역, 업체 책임 소재는 확인 대상이 아니며 확정하지 않았습니다. 사진이 유사하다는 사실만으로 동일인으로 보지 않습니다.',
+    '본 보고는 공개 게시글만 열람해 작성했습니다. 작성자 개인정보(계정 식별값·주문번호·주소)는 수집하지 않았습니다.'
+  ].forEach(s=>lim.append(el('li',s)));
+  root.append(lim);
+
+  section(root,'관측 게시글 전체 목록 '+posts.length+'건');
+  para(root,'분류 근거를 기록한 전체 목록입니다. ‘이번 상품과 직접 관련 없음’으로 분류한 '+(posts.length-related.length)+'건을 포함합니다.','caution');
+  const LABEL={confirmed:'확인된 사건',pending:'검증 중',repeat:'인용·비판',other:'정상 수령·기타',excluded:'직접 관련 없음'};
+  const all=document.createElement('table');
+  all.innerHTML='<thead><tr><th>분류</th><th>출처</th><th>시각</th><th>게시글</th></tr></thead>';
+  const tb=document.createElement('tbody');
+  for(const p of posts){
+    const tr=document.createElement('tr');
+    tr.append(el('td',LABEL[p.category]||p.category,'t'),el('td',plat(p.platform)+' '+p.id,'t'),el('td',p.time,'t'));
+    const td=el('td');const u=safeUrl(p.url);
+    if(u){const a=el('a',p.title||'(제목 미확보)');a.href=u;a.target='_blank';a.rel='noopener noreferrer';td.append(a);}
+    else td.append(document.createTextNode(p.title||'(제목 미확보)'));
+    tr.append(td);tb.append(tr);
+  }
+  all.append(tb);root.append(all);
+
+  const f=el('div',undefined,'foot');
+  f.append(el('div','본 보고는 공개 게시글 관측 결과이며, 관측 기준 시각 이후의 변동은 반영되지 않았습니다.'));
+  f.append(el('div','자료 갱신: '+(d.updatedAt||'미기재')));
+  root.append(f);
+}
+function esc(s){return String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]))}
+
+let loaded=null;
+async function load(){
+  try{
+    const r=await fetch('data.json?t='+Date.now(),{cache:'no-store'});
+    if(!r.ok)throw Error('HTTP '+r.status);
+    loaded=await r.json();
+    document.getElementById('err').textContent='';
+    render(loaded);
+  }catch(e){
+    document.getElementById('err').textContent='최신 자료를 불러오지 못했습니다. 잠시 후 새로고침해 주세요. ('+e.message+')';
+  }
+}
+document.getElementById('btnPdf').onclick=()=>window.print();
+document.getElementById('btnFile').onclick=async function(){
+  const btn=this;btn.disabled=true;const old=btn.textContent;btn.textContent='사진을 담는 중…';
+  try{
+    const imgs=[...document.querySelectorAll('#sheet img')];
+    const map=new Map();
+    for(const im of imgs){
+      const f=im.dataset.file;if(!f||map.has(f))continue;
+      const r=await fetch('images/'+f,{cache:'no-store'});
+      const b=await r.blob();
+      map.set(f,await new Promise(res=>{const fr=new FileReader();fr.onload=()=>res(fr.result);fr.readAsDataURL(b)}));
+    }
+    const doc=document.documentElement.cloneNode(true);
+    doc.querySelector('#bar')?.remove();
+    doc.querySelectorAll('script').forEach(s=>s.remove());
+    doc.querySelectorAll('#sheet img').forEach(im=>{const u=map.get(im.dataset.file);if(u)im.setAttribute('src',u)});
+    const html='<!doctype html>\n'+doc.outerHTML;
+    const a=document.createElement('a');
+    a.href=URL.createObjectURL(new Blob([html],{type:'text/html;charset=utf-8'}));
+    const stamp=(loaded?.updatedAt||'').replace(/[^0-9]/g,'').slice(0,12)||'latest';
+    a.download='블루아카이브_겨울굿즈_배송상태_관측보고_'+stamp+'.html';
+    a.click();setTimeout(()=>URL.revokeObjectURL(a.href),4000);
+  }catch(e){
+    document.getElementById('err').textContent='파일로 저장하지 못했습니다. ('+e.message+')';
+  }finally{btn.disabled=false;btn.textContent=old}
+};
+load();
+</script></body></html>
