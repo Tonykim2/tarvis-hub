@@ -33,7 +33,8 @@
       "photoRelation": "초록 책상 위 파손 컵 · 직접 시각 확인",
       "confidence": "높음: 원문·사진 확인",
       "platform": "DC",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683196"
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683196",
+      "relation": "해당 없음 또는 미확인"
     },
     {
       "id": "19683206",
@@ -50,7 +51,8 @@
       "photoRelation": "꽃무늬 식탁보 · 사건 01과 다른 장면",
       "confidence": "높음: 원문·사진 확인 / 별도 사건 후보",
       "platform": "DC",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683206"
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683206",
+      "relation": "해당 없음 또는 미확인"
     },
     {
       "id": "19683242",
@@ -67,7 +69,8 @@
       "photoRelation": "새 촬영 사진이나 동일 사건 · 주문 화면은 공개 제외",
       "confidence": "높음: 계정·본문·사진 교차 확인",
       "platform": "DC",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683242"
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683242",
+      "relation": "본인 후속"
     },
     {
       "id": "19683805",
@@ -82,7 +85,8 @@
       "photoRelation": "추가 촬영 사진 2장; 나머지 다운로드 2파일은 로딩 아이콘으로 제외",
       "confidence": "높음: 회차 기록의 계정·사진 대조",
       "platform": "DC",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683805"
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683805",
+      "relation": "본인 후속"
     },
     {
       "id": "19683818",
@@ -97,7 +101,8 @@
       "photoRelation": "사진 대조 미완료",
       "confidence": "높음: 회차 기록의 동일 계정 확인",
       "platform": "DC",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683818"
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683818",
+      "relation": "본인 후속"
     },
     {
       "id": "19683343",
@@ -112,7 +117,8 @@
       "photoRelation": "원본 사진 연결 미확인",
       "confidence": "잠정: 사용자 검토 + 공개 계정 대조",
       "platform": "DC",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683343"
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683343",
+      "relation": "타인 인용·비판"
     },
     {
       "id": "19683298",
@@ -127,7 +133,8 @@
       "photoRelation": "사진 출처 미대조",
       "confidence": "본문 확인",
       "platform": "DC",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683298"
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683298",
+      "relation": "타인 인용·비판"
     },
     {
       "id": "19683810",
@@ -142,7 +149,8 @@
       "photoRelation": "로컬 이미지 1장 · 출처 대조 대기",
       "confidence": "14:00 회차 본문 확인",
       "platform": "DC",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683810"
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683810",
+      "relation": "타인 인용·비판"
     },
     {
       "id": "19683442",
@@ -157,7 +165,8 @@
       "photoRelation": "파손 사진 근거 없음",
       "confidence": "본문 확인",
       "platform": "DC",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683442"
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683442",
+      "relation": "타인 인용·비판"
     },
     {
       "id": "19683338",
@@ -172,7 +181,8 @@
       "photoRelation": "사진 시각 검증 대기",
       "confidence": "본문 주장 확인 / 원인 미확인",
       "platform": "DC",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683338"
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683338",
+      "relation": "해당 없음 또는 미확인"
     },
     {
       "id": "19683608",
@@ -187,7 +197,8 @@
       "photoRelation": "사진 2장; 로딩 아이콘 1파일 제외",
       "confidence": "14:00 회차에서 다른 계정 확인",
       "platform": "DC",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683608"
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683608",
+      "relation": "해당 없음 또는 미확인"
     },
     {
       "id": "19683783",
@@ -202,7 +213,8 @@
       "photoRelation": "움짤 독립 시각 검증 미완료",
       "confidence": "14:00 회차 기록",
       "platform": "DC",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683783"
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683783",
+      "relation": "해당 없음 또는 미확인"
     },
     {
       "id": "19683559",
@@ -217,7 +229,8 @@
       "photoRelation": "사진 미검증",
       "confidence": "본문 확인",
       "platform": "DC",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683559"
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683559",
+      "relation": "해당 없음 또는 미확인"
     },
     {
       "id": "19683744",
@@ -232,7 +245,8 @@
       "photoRelation": "사진 확인 · 로컬 저장",
       "confidence": "13:45 회차 사진·본문 확인",
       "platform": "DC",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683744"
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683744",
+      "relation": "해당 없음 또는 미확인"
     },
     {
       "id": "19683384",
@@ -247,7 +261,8 @@
       "photoRelation": "사진 3장 기록 / 별도 대조 미완료",
       "confidence": "13:45 회차 기록",
       "platform": "DC",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683384"
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683384",
+      "relation": "해당 없음 또는 미확인"
     },
     {
       "id": "19683841",
@@ -262,7 +277,8 @@
       "photoRelation": "독립 사진 대조 미완료",
       "confidence": "14:00 회차 기록",
       "platform": "DC",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683841"
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683841",
+      "relation": "해당 없음 또는 미확인"
     },
     {
       "id": "19683585",
@@ -277,7 +293,8 @@
       "photoRelation": "대상 상품 일치 확인 안 됨",
       "confidence": "사용자 정정 기반",
       "platform": "DC",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683585"
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683585",
+      "relation": "해당 없음 또는 미확인"
     },
     {
       "id": "19683396",
@@ -292,7 +309,8 @@
       "photoRelation": "미대조",
       "confidence": "기존 회차 분류 / 사진 연결 보류",
       "platform": "DC",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683396"
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683396",
+      "relation": "타인 인용·비판"
     },
     {
       "id": "19683230",
@@ -307,7 +325,8 @@
       "photoRelation": "미대조",
       "confidence": "기존 회차 분류 / 사진 연결 보류",
       "platform": "DC",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683230"
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683230",
+      "relation": "타인 인용·비판"
     },
     {
       "id": "19683358",
@@ -322,7 +341,8 @@
       "photoRelation": "미대조",
       "confidence": "기존 회차 분류 / 사진 연결 보류",
       "platform": "DC",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683358"
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683358",
+      "relation": "타인 인용·비판"
     },
     {
       "id": "19683399",
@@ -337,7 +357,8 @@
       "photoRelation": "미대조",
       "confidence": "기존 회차 분류 / 사진 연결 보류",
       "platform": "DC",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683399"
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683399",
+      "relation": "타인 인용·비판"
     },
     {
       "id": "187616096",
@@ -352,7 +373,8 @@
       "photoRelation": "본문·사진 접근 미완료",
       "confidence": "제목만 확인",
       "platform": "아카라이브",
-      "url": "https://arca.live/b/bluearchive/187616096"
+      "url": "https://arca.live/b/bluearchive/187616096",
+      "relation": "해당 없음 또는 미확인"
     },
     {
       "id": "187619040",
@@ -367,7 +389,8 @@
       "photoRelation": "본문·사진 접근 미완료",
       "confidence": "제목만 확인",
       "platform": "아카라이브",
-      "url": "https://arca.live/b/bluearchive/187619040"
+      "url": "https://arca.live/b/bluearchive/187619040",
+      "relation": "해당 없음 또는 미확인"
     },
     {
       "id": "187618599",
@@ -382,7 +405,8 @@
       "photoRelation": "본문·사진 접근 미완료",
       "confidence": "제목만 확인",
       "platform": "아카라이브",
-      "url": "https://arca.live/b/bluearchive/187618599"
+      "url": "https://arca.live/b/bluearchive/187618599",
+      "relation": "해당 없음 또는 미확인"
     },
     {
       "id": "187618165",
@@ -397,7 +421,8 @@
       "photoRelation": "본문·사진 접근 미완료",
       "confidence": "제목만 확인",
       "platform": "아카라이브",
-      "url": "https://arca.live/b/bluearchive/187618165"
+      "url": "https://arca.live/b/bluearchive/187618165",
+      "relation": "해당 없음 또는 미확인"
     },
     {
       "id": "187617276",
@@ -412,7 +437,8 @@
       "photoRelation": "본문·사진 접근 미완료",
       "confidence": "제목만 확인",
       "platform": "아카라이브",
-      "url": "https://arca.live/b/bluearchive/187617276"
+      "url": "https://arca.live/b/bluearchive/187617276",
+      "relation": "해당 없음 또는 미확인"
     },
     {
       "id": "187619996",
@@ -427,7 +453,8 @@
       "photoRelation": "본문·사진 접근 미완료",
       "confidence": "제목만 확인",
       "platform": "아카라이브",
-      "url": "https://arca.live/b/bluearchive/187619996"
+      "url": "https://arca.live/b/bluearchive/187619996",
+      "relation": "해당 없음 또는 미확인"
     },
     {
       "id": "187616651",
@@ -442,7 +469,8 @@
       "photoRelation": "본문·사진 접근 미완료",
       "confidence": "제목만 확인",
       "platform": "아카라이브",
-      "url": "https://arca.live/b/bluearchive/187616651"
+      "url": "https://arca.live/b/bluearchive/187616651",
+      "relation": "해당 없음 또는 미확인"
     }
   ]
 }
