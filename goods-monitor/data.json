@@ -2,7 +2,7 @@
  "observedAt": "2026-10-31 18:07까지 확인 (분류 근거를 기록한 글 85건)",
  "updatedAt": "2026-10-31T18:20+09:00",
  "imageCount": 10,
- "coverage": "디시 프로젝트MX 갤러리: 정상적으로 확인했습니다. 17:04부터 18:07까지 새로 올라온 글을 모두 훑어, 이번 굿즈와 관련된 글 3건을 골라 직접 열어 봤습니다. 이 시간 동안 새로 확인된 '사진이 있는 직접 파손 제보'는 없으며, 낮 12시대 이후 약 6시간째 새 파손 제보가 들어오지 않고 있습니다. 사진과 글을 직접 확인해 서로 다른 피해로 본 사건은 머그컵 파손 2건(작성자 2명), 포토카드 상태 불만 1건으로 그대로입니다. 조립이 잘 안 된다는 글 1건과 이번에 새로 들어온 색상 문의 1건은 아직 확인 중이라 이 숫자에 넣지 않았습니다. 새로 들어온 글은 '잘 받았다'는 수령 후기가 대부분이고, 그중에는 온도에 따라 그림이 바뀌는 기능이 제대로 작동했다는 사진 후기도 있었습니다. 다만 멀쩡하게 받은 사람이 늘었다고 해서 앞서 확인된 파손이 없던 일이 되는 것은 아닙니다. 아카라이브: 글 목록은 정상적으로 열렸고, 이번 굿즈와 관련돼 보이는 새 글 4건의 제목을 확보했습니다. 다만 글 하나하나는 여전히 열어 보지 못해 내용과 사진을 확인하지 못했고, 모두 '확인 중'으로 두었습니다. 엑스(옛 트위터)는 이번 점검 범위에서 빠져 있어 확인하지 않았습니다. 확인하지 않았다는 뜻이지 그곳에 글이 없다는 뜻은 아닙니다.",
+ "coverage": "정상 수령 보고가 늘어난 것이 앞서 확인된 파손 사례를 상쇄하지는 않습니다. 두 수치는 분리해 보아야 합니다.",
  "photos": [
   {
    "file": "19683196-0.jpg",
@@ -51,8 +51,7 @@
    "title": "카노에 머그컵 시킨 사람들 조심하셈",
    "time": "12:11",
    "category": "confirmed",
-   "reason": "파손 사진과 직접 수령 주장을 확인. 관측 범위 내 머그컵 파손 ①의 최초 글.",
-   "author": "언제어디서세리",
+   "reason": "파손된 머그컵 사진과 직접 수령했다는 내용이 함께 있습니다. 관측 범위에서 머그컵 파손을 처음 제기한 글입니다.",
    "case": "BA-MUG-01",
    "images": [
     "19683196-0.jpg"
@@ -62,15 +61,16 @@
    "confidence": "높음 — 글과 사진을 직접 확인",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683196",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "19683206",
-   "title": "머그컵 … 포장 뭐냐?",
+   "title": "머그컵 시발 포장 뭐냐?",
    "time": "12:14",
    "category": "confirmed",
-   "reason": "머그컵 파손 ①과 다른 공개 계정. 꽃무늬 식탁보 위 파손 컵. 실제 구매자의 독립성까지 검증한 것은 아님.",
-   "author": "ㅇㅇ",
+   "reason": "머그컵 파손 ①과 다른 계정이며 촬영 배경도 다릅니다. 꽃무늬 식탁보 위에 파손된 컵이 놓여 있습니다. 다만 두 작성자가 서로 무관한 구매자인지까지는 확인하지 못했습니다.",
    "case": "BA-MUG-02",
    "images": [
     "19683206-1.jpg"
@@ -80,15 +80,16 @@
    "confidence": "높음 — 글과 사진을 직접 확인 / 별도 사건 후보",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683206",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "19683242",
    "title": "쨌든 교환신청을 했으",
    "time": "12:21",
    "category": "repeat",
-   "reason": "머그컵 파손 ① 최초 글과 닉네임·공개 계정 식별값 동일. 교환신청 및 추가 사진. 신규 피해 아님.",
-   "author": "언제어디서세리",
+   "reason": "머그컵 파손 ① 최초 게시글과 동일한 작성자입니다. 교환 신청 내용과 추가 사진이 함께 올라왔습니다. 새로운 피해가 아니라 같은 사건의 후속 글입니다.",
    "case": "BA-MUG-01",
    "images": [
     "19683242-1.jpg"
@@ -98,15 +99,16 @@
    "confidence": "높음 — 계정·글 내용·사진 교차 확인",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683242",
-   "relation": "본인 후속"
+   "relation": "본인 후속",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "19683805",
    "title": "사진 더 찍었다",
    "time": "13:52",
    "category": "repeat",
-   "reason": "앞서 확인해 기록: 머그컵 파손 ②와 동일 계정이며 꽃무늬 식탁보 배경도 일치. 추가 파손 사진 4장.",
-   "author": "ㅇㅇ",
+   "reason": "머그컵 파손 ②와 동일한 작성자이며 촬영 배경도 일치합니다. 추가 파손 사진이 올라왔습니다. 같은 사건의 후속 글입니다.",
    "case": "BA-MUG-02",
    "images": [],
    "parent": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683206",
@@ -114,15 +116,16 @@
    "confidence": "높음 — 앞서 확인한 기록의 계정·사진 대조",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683805",
-   "relation": "본인 후속"
+   "relation": "본인 후속",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "19683818",
    "title": "에리모자도 적당히 괜찮게 나온거 같아보이는데",
    "time": "13:55",
    "category": "repeat",
-   "reason": "머그컵 파손 ① 작성자의 긍정 후속. 컵 파손과 별도로 에리 모자에는 긍정적. 부정 확산 건으로 집계하지 않음.",
-   "author": "언제어디서세리",
+   "reason": "머그컵 파손 ① 작성자의 후속 글입니다. 머그컵 파손과 별개로 에리 모자에는 긍정적으로 평가했습니다. 부정 여론 건수로는 세지 않았습니다.",
    "case": "BA-MUG-01",
    "images": [],
    "parent": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683196",
@@ -130,15 +133,16 @@
    "confidence": "높음 — 앞서 확인한 기록의 동일 계정 확인",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683818",
-   "relation": "본인 후속"
+   "relation": "본인 후속",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "19683343",
    "title": "현재 머그컵 현황",
    "time": "12:36",
    "category": "repeat",
-   "reason": "사용자 검토상 타인 피해 글 재인용. 업체 비판 글과 같은 계정. 어느 사건 사진을 가져왔는지는 추가 대조 필요.",
-   "author": "방짜",
+   "reason": "타인의 피해 게시글을 인용한 비판 글로 판단했습니다. 어느 사건의 사진을 인용했는지는 대조하지 못했습니다.",
    "case": "",
    "images": [],
    "parent": null,
@@ -146,7 +150,9 @@
    "confidence": "잠정 — 사용자 검토 + 공개 계정 대조",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683343",
-   "relation": "타인 인용·비판"
+   "relation": "타인 인용·비판",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "19683298",
@@ -154,7 +160,6 @@
    "time": "12:29",
    "category": "repeat",
    "reason": "다른 피해 글을 언급하며 업체를 비판. 별도 직접 피해로 세지 않음.",
-   "author": "방짜",
    "case": "",
    "images": [],
    "parent": null,
@@ -162,7 +167,9 @@
    "confidence": "글 내용 직접 확인",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683298",
-   "relation": "타인 인용·비판"
+   "relation": "타인 인용·비판",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "19683810",
@@ -170,7 +177,6 @@
    "time": "13:53",
    "category": "repeat",
    "reason": "퍼블리싱 변경과 업체 선정에 대한 비판. 직접 피해 주장 없음.",
-   "author": "",
    "case": "",
    "images": [],
    "parent": null,
@@ -178,15 +184,16 @@
    "confidence": "글 내용 직접 확인",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683810",
-   "relation": "타인 인용·비판"
+   "relation": "타인 인용·비판",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "19683442",
-   "title": "이제 머그컵글 누가 X에 퍼가고…",
+   "title": "이제 머그컵글 누가 X에 퍼가고 (제목 일부만 확보)",
    "time": "12:51",
    "category": "repeat",
    "reason": "외부 확산을 예상하는 반응. 실제 X 게시 또는 확산 증거가 아님.",
-   "author": "",
    "case": "",
    "images": [],
    "parent": null,
@@ -194,15 +201,16 @@
    "confidence": "글 내용 직접 확인",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683442",
-   "relation": "타인 인용·비판"
+   "relation": "타인 인용·비판",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "19683338",
    "title": "까까슨배 머그컵 왔는데 피규어 찐빠인가",
    "time": "12:36",
    "category": "pending",
-   "reason": "헤일로 조립 어려움을 호소. 컵 파손과 별도 유형. 해결 여부 미확인.",
-   "author": "RPG",
+   "reason": "머그컵 뚜껑 피규어의 헤일로가 끼워지지 않는다는 내용입니다. 컵 파손과는 다른 유형이며, 이후 해결되었는지는 확인하지 못했습니다.",
    "case": "BA-ASSEMBLY-01",
    "images": [],
    "parent": null,
@@ -210,15 +218,19 @@
    "confidence": "글에 적힌 주장만 확인 / 원인 미확인",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683338",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted",
+   "finishIssue": [
+    "피규어 조립부 빡빡함"
+   ]
   },
   {
    "id": "19683608",
    "title": "카노에 컵 피규어 부분 확대샷",
    "time": "13:19",
    "category": "other",
-   "reason": "다른 작성자가 제시한 조립 안내. 최초 조립불편 작성자의 해결 완료 후속으로 취급하면 안 됨.",
-   "author": "꾸꾸나",
+   "reason": "머그컵 뚜껑 피규어의 조립 방법을 설명한 글입니다. 조립 불량을 제기한 작성자와는 다른 작성자이며, 해당 사건이 해결되었다는 뜻은 아닙니다.",
    "case": "",
    "images": [],
    "parent": null,
@@ -226,15 +238,17 @@
    "confidence": "다른 계정임을 확인",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683608",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted",
+   "otherGroup": "조립 방법 안내"
   },
   {
    "id": "19683783",
-   "title": "변온 정상작동 움짤",
+   "title": "데이터주의) 카노에 컵 무늬 변하는 움짤",
    "time": "13:48",
    "category": "other",
-   "reason": "조립 안내 작성자의 정상 작동 사례.",
-   "author": "꾸꾸나",
+   "reason": "뚜껑 피규어 조립 방법을 안내한 작성자가 올린 정상 작동 사례입니다.",
    "case": "",
    "images": [],
    "parent": null,
@@ -242,15 +256,17 @@
    "confidence": "앞서 확인한 기록",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683783",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted",
+   "otherGroup": "사진으로 정상 확인"
   },
   {
    "id": "19683559",
    "title": "에리생일에 올리는 와헌굿즈리뷰",
    "time": "13:11",
    "category": "other",
-   "reason": "카드 구김·설명서 부족 및 변온 재시험 예정. 종합 평가는 만족. 전체를 부정 후기 또는 변온 불량 확정으로 세지 않음.",
-   "author": "",
+   "reason": "포토카드 구김과 설명서 부족을 지적했고, 변온 기능은 다시 시험해 보겠다고 적었습니다. 종합 평가는 만족입니다. 글 전체를 부정 후기나 변온 불량으로 세지 않았습니다.",
    "case": "",
    "images": [],
    "parent": null,
@@ -258,15 +274,21 @@
    "confidence": "글 내용 직접 확인",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683559",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted",
+   "otherGroup": "수령했으나 지적 사항 있음",
+   "finishIssue": [
+    "포토카드 구김",
+    "설명서 없음"
+   ]
   },
   {
    "id": "19683744",
    "title": "다행히 머그컵 무사한듯",
    "time": "13:40",
    "category": "other",
-   "reason": "컵·피규어 정상 수령이나 완충 포장에는 불만. 파손과 포장 불만을 구분.",
-   "author": "",
+   "reason": "컵과 피규어는 정상으로 수령했으나 완충 포장에 불만을 적었습니다. 파손과 포장 불만은 구분해 기록했습니다.",
    "case": "",
    "images": [],
    "parent": null,
@@ -274,15 +296,20 @@
    "confidence": "사진과 글 내용을 직접 확인",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683744",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted",
+   "otherGroup": "수령했으나 지적 사항 있음",
+   "finishIssue": [
+    "완충재 없음"
+   ]
   },
   {
    "id": "19683384",
    "title": "신품 까까컵에 즉시 아메리까노 투입",
    "time": "12:42",
    "category": "other",
-   "reason": "정상 수령·사용 사례.",
-   "author": "",
+   "reason": "정상 수령 후 사용한 사례입니다.",
    "case": "",
    "images": [],
    "parent": null,
@@ -290,15 +317,17 @@
    "confidence": "앞서 확인한 기록",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683384",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted",
+   "otherGroup": "사진으로 정상 확인"
   },
   {
    "id": "19683841",
    "title": "에리다요가 왔으니 개봉기",
    "time": "13:59",
    "category": "other",
-   "reason": "정상 개봉 사례로 기록됨.",
-   "author": "",
+   "reason": "정상적으로 개봉한 사례입니다.",
    "case": "",
    "images": [],
    "parent": null,
@@ -306,15 +335,17 @@
    "confidence": "앞서 확인한 기록",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683841",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted",
+   "otherGroup": "사진으로 정상 확인"
   },
   {
    "id": "19683585",
    "title": "미친년",
    "time": "13:15",
    "category": "excluded",
-   "reason": "사용자 검토상 다른 상품 건. 새로운 관련 증거가 없으면 이번 굿즈 집계에서 제외.",
-   "author": "",
+   "reason": "이번 상품과 다른 건으로 판단해 집계에서 제외했습니다.",
    "case": "",
    "images": [],
    "parent": null,
@@ -322,15 +353,16 @@
    "confidence": "사용자 정정 기반",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683585",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "19683396",
-   "title": "뽁뽁이 비용 비판",
+   "title": "까까머그컵 뽁뽁이쌀먹은 좀 웃기네",
    "time": "12:44",
    "category": "repeat",
-   "reason": "포장 비판으로 앞서 확인해 기록. 개별 사진 출처·원사건 연결은 미완료. 직접 피해로 집계하지 않음.",
-   "author": "",
+   "reason": "완충재 비용을 문제 삼은 포장 비판 글입니다. 사진의 출처와 원 사건 연결은 확인하지 못했습니다. 직접 피해로 집계하지 않았습니다.",
    "case": "",
    "images": [],
    "parent": null,
@@ -338,15 +370,16 @@
    "confidence": "앞서 분류한 글 · 사진 연결은 보류",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683396",
-   "relation": "타인 인용·비판"
+   "relation": "타인 인용·비판",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "19683230",
-   "title": "도자기컵 포장 비판",
+   "title": "머그컵 저거 포장 첨보고 먼 중고거래 찐빠인가 싶었는데",
    "time": "12:18",
    "category": "repeat",
-   "reason": "포장 비판으로 앞서 확인해 기록. 개별 사진 출처·원사건 연결은 미완료. 직접 피해로 집계하지 않음.",
-   "author": "",
+   "reason": "포장 상태를 중고거래에 비유한 비판 글입니다. 사진의 출처와 원 사건 연결은 확인하지 못했습니다. 직접 피해로 집계하지 않았습니다.",
    "case": "",
    "images": [],
    "parent": null,
@@ -354,15 +387,16 @@
    "confidence": "앞서 분류한 글 · 사진 연결은 보류",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683230",
-   "relation": "타인 인용·비판"
+   "relation": "타인 인용·비판",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "19683358",
-   "title": "FRAGILE 미부착 비판",
+   "title": "저거 택배 FRAGILE 딱지도 안붙어있나?",
    "time": "12:38",
    "category": "repeat",
-   "reason": "포장 비판으로 앞서 확인해 기록. 개별 사진 출처·원사건 연결은 미완료. 직접 피해로 집계하지 않음.",
-   "author": "",
+   "reason": "취급주의 표시가 없었다는 포장 비판 글입니다. 사진의 출처와 원 사건 연결은 확인하지 못했습니다. 직접 피해로 집계하지 않았습니다.",
    "case": "",
    "images": [],
    "parent": null,
@@ -370,15 +404,16 @@
    "confidence": "앞서 분류한 글 · 사진 연결은 보류",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683358",
-   "relation": "타인 인용·비판"
+   "relation": "타인 인용·비판",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "19683399",
-   "title": "완충재 미삽입 비판",
+   "title": "완충재 안넣어서 파킨되는 초식은 신박하네",
    "time": "12:45",
    "category": "repeat",
-   "reason": "포장 비판으로 앞서 확인해 기록. 개별 사진 출처·원사건 연결은 미완료. 직접 피해로 집계하지 않음.",
-   "author": "",
+   "reason": "완충재가 들어 있지 않았다는 포장 비판 글입니다. 사진의 출처와 원 사건 연결은 확인하지 못했습니다. 직접 피해로 집계하지 않았습니다.",
    "case": "",
    "images": [],
    "parent": null,
@@ -386,7 +421,9 @@
    "confidence": "앞서 분류한 글 · 사진 연결은 보류",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683399",
-   "relation": "타인 인용·비판"
+   "relation": "타인 인용·비판",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "187616096",
@@ -394,7 +431,6 @@
    "time": "12:32",
    "category": "pending",
    "reason": "제목만 확인. 재인용·비판 후보이나 글 내용과 사진을 확보하지 못해 사건 연결 및 작성자 관계 보류.",
-   "author": "",
    "case": "",
    "images": [],
    "parent": null,
@@ -402,7 +438,9 @@
    "confidence": "제목만 확인",
    "platform": "아카라이브",
    "url": "https://arca.live/b/bluearchive/187616096",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "found"
   },
   {
    "id": "187619040",
@@ -410,7 +448,6 @@
    "time": "13:08",
    "category": "pending",
    "reason": "제목만 확인. 재인용·비판 후보이나 글 내용과 사진을 확보하지 못해 사건 연결 및 작성자 관계 보류.",
-   "author": "",
    "case": "",
    "images": [],
    "parent": null,
@@ -418,7 +455,9 @@
    "confidence": "제목만 확인",
    "platform": "아카라이브",
    "url": "https://arca.live/b/bluearchive/187619040",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "found"
   },
   {
    "id": "187618599",
@@ -426,7 +465,6 @@
    "time": "13:03",
    "category": "pending",
    "reason": "제목만 확인. 재인용·비판 후보이나 글 내용과 사진을 확보하지 못해 사건 연결 및 작성자 관계 보류.",
-   "author": "",
    "case": "",
    "images": [],
    "parent": null,
@@ -434,7 +472,9 @@
    "confidence": "제목만 확인",
    "platform": "아카라이브",
    "url": "https://arca.live/b/bluearchive/187618599",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "found"
   },
   {
    "id": "187618165",
@@ -442,7 +482,6 @@
    "time": "12:57",
    "category": "pending",
    "reason": "제목만 확인. 재인용·비판 후보이나 글 내용과 사진을 확보하지 못해 사건 연결 및 작성자 관계 보류.",
-   "author": "",
    "case": "",
    "images": [],
    "parent": null,
@@ -450,7 +489,9 @@
    "confidence": "제목만 확인",
    "platform": "아카라이브",
    "url": "https://arca.live/b/bluearchive/187618165",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "found"
   },
   {
    "id": "187617276",
@@ -458,7 +499,6 @@
    "time": "12:46",
    "category": "pending",
    "reason": "제목만 확인. 재인용·비판 후보이나 글 내용과 사진을 확보하지 못해 사건 연결 및 작성자 관계 보류.",
-   "author": "",
    "case": "",
    "images": [],
    "parent": null,
@@ -466,7 +506,9 @@
    "confidence": "제목만 확인",
    "platform": "아카라이브",
    "url": "https://arca.live/b/bluearchive/187617276",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "found"
   },
   {
    "id": "187619996",
@@ -474,7 +516,6 @@
    "time": "13:20",
    "category": "pending",
    "reason": "제목만 확인. 재인용·비판 후보이나 글 내용과 사진을 확보하지 못해 사건 연결 및 작성자 관계 보류.",
-   "author": "",
    "case": "",
    "images": [],
    "parent": null,
@@ -482,7 +523,9 @@
    "confidence": "제목만 확인",
    "platform": "아카라이브",
    "url": "https://arca.live/b/bluearchive/187619996",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "found"
   },
   {
    "id": "187616651",
@@ -490,7 +533,6 @@
    "time": "12:38",
    "category": "pending",
    "reason": "제목만 확인. 재인용·비판 후보이나 글 내용과 사진을 확보하지 못해 사건 연결 및 작성자 관계 보류.",
-   "author": "",
    "case": "",
    "images": [],
    "parent": null,
@@ -498,7 +540,9 @@
    "confidence": "제목만 확인",
    "platform": "아카라이브",
    "url": "https://arca.live/b/bluearchive/187616651",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "found"
   },
   {
    "id": "19683902",
@@ -506,7 +550,6 @@
    "time": "14:04",
    "category": "excluded",
    "reason": "글 내용 직접 확인: '아니면 출입금지당함'. 에리(다요) 모자를 행사에 쓰고 가자는 농담. 파손·포장 불만 아님.",
-   "author": "doefox",
    "case": "",
    "images": [],
    "parent": null,
@@ -514,7 +557,9 @@
    "confidence": "글 내용 직접 확인",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683902",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "19683920",
@@ -522,7 +567,6 @@
    "time": "14:08",
    "category": "excluded",
    "reason": "글 내용 직접 확인: '다른것도 털리기 싫으면 집 대문앞에 두고 있도록'. 컵을 소재로 한 농담. 수령·피해 주장 없음.",
-   "author": "k2t1kt",
    "case": "",
    "images": [],
    "parent": null,
@@ -530,7 +574,9 @@
    "confidence": "글 내용 직접 확인",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683920",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "19683875",
@@ -538,7 +584,6 @@
    "time": "14:01",
    "category": "excluded",
    "reason": "키워드 '카노에'만 일치. 제목은 게임 내 수치 이야기로 보이며 글 내용 텍스트는 비어 있어 굿즈 관련 근거 없음.",
-   "author": "problem2792",
    "case": "",
    "images": [],
    "parent": null,
@@ -546,15 +591,16 @@
    "confidence": "제목만 확인 · 글 내용은 확인하지 못함",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683875",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "posted"
   },
   {
    "id": "19684002",
    "title": "포카 이게 맞냐",
    "time": "14:21",
    "category": "confirmed",
-   "reason": "글 내용 직접 확인: '아 ㅅㅂ 진짜 포카도 굿즈라고 ㅡㅡ 반이 접혔네'. 첨부 사진 직접 확인: 비닐 포장된 포토카드 가장자리에 가로 방향 접힘/주름선이 보임. 머그컵 파손과는 다른 손상 유형(포토카드 접힘)으로 별도 집계. 동일 계정의 후속 글 사진에 카노에 머그컵 피규어 뚜껑이 찍혀 있어 같은 굿즈 배송분으로 추정되나 주문 내역 확인은 불가.",
-   "author": "fare2634",
+   "reason": "글 내용에 포토카드 절반이 접혀 있었다는 내용이 있습니다. 첨부 사진에서 비닐 포장된 포토카드 가장자리의 가로 방향 접힘선을 확인했습니다. 머그컵 파손과 다른 손상 유형이므로 별도 사건으로 집계했습니다. 같은 작성자의 후속 글 사진에 변온 머그컵 뚜껑이 함께 찍혀 있어 동일 배송분으로 보이나, 주문 내역은 확인 대상이 아닙니다.",
    "case": "BA-PC-01",
    "images": [
     "19684002-0.jpg"
@@ -564,15 +610,19 @@
    "confidence": "글과 사진을 직접 확인",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684002",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted",
+   "finishIssue": [
+    "포토카드 구김"
+   ]
   },
   {
    "id": "19684072",
    "title": "포카때매 열받았는데 카노에 귀여워서 풀림;",
    "time": "14:31",
    "category": "repeat",
-   "reason": "포토카드 상태 불만과 동일 공개 계정(fare2634)의 후속 글. 글 내용 텍스트는 비어 있고 사진만 있음. 사진 직접 확인: 카노에 머그컵의 솥 모양 피규어 뚜껑이 책상 위에 온전한 상태로 놓여 있음 — 추가 파손 주장 아니며 불만 확산으로 합산하지 않음.",
-   "author": "fare2634",
+   "reason": "포토카드 상태 불만을 제기한 작성자의 후속 글입니다. 글 내용 없이 사진만 올라왔고, 사진에는 머그컵 뚜껑 피규어가 온전한 상태로 찍혀 있습니다. 추가 피해 주장이 아니므로 합산하지 않았습니다.",
    "case": "BA-PC-01",
    "images": [],
    "parent": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684002",
@@ -580,15 +630,16 @@
    "confidence": "글과 사진을 직접 확인",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684072",
-   "relation": "본인 후속"
+   "relation": "본인 후속",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "19684000",
    "title": "까까컵 왔다ㅋㅋ",
    "time": "14:20",
    "category": "other",
-   "reason": "글 내용 직접 확인: '피규어 걱정했는데 나쁘지 않은듯'. 사진 직접 확인: 변온 머그컵 본체(Itagaki Kanoe 각인, 하단 일러스트 노출)가 파손 없이 놓여 있음. 정상 수령 사례, 피해 집계 제외.",
-   "author": "kim5567",
+   "reason": "피규어 상태를 걱정했으나 나쁘지 않다는 내용입니다. 사진에서 변온 머그컵 본체가 파손 없이 놓여 있는 것을 확인했습니다. 정상 수령 사례로 보아 피해 집계에서 제외했습니다.",
    "case": "",
    "images": [],
    "parent": null,
@@ -596,15 +647,17 @@
    "confidence": "글과 사진을 직접 확인",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684000",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted",
+   "otherGroup": "사진으로 정상 확인"
   },
   {
    "id": "19684078",
    "title": "머그컵 다행히 안깨지고 왔네",
    "time": "14:33",
    "category": "other",
-   "reason": "글 내용 직접 확인: '까슨배임 귀여운듯'. 사진 직접 확인: 머그컵 위에 솥 피규어 뚜껑이 조립된 정상 상태. 정상 수령 사례, 피해 집계 제외.",
-   "author": "link2457",
+   "reason": "사진에서 머그컵 위에 피규어 뚜껑이 정상으로 조립된 상태를 확인했습니다. 정상 수령 사례로 보아 피해 집계에서 제외했습니다.",
    "case": "",
    "images": [],
    "parent": null,
@@ -612,7 +665,10 @@
    "confidence": "글과 사진을 직접 확인",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684078",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted",
+   "otherGroup": "사진으로 정상 확인"
   },
   {
    "id": "19683976",
@@ -620,7 +676,6 @@
    "time": "14:16",
    "category": "excluded",
    "reason": "글 내용 직접 확인: '현장재고 찾아봐야하나 전에 1차때는 통판 안됐었는데'. 품절·통판 문의로 파손·포장 불만 아님.",
-   "author": "dudumdu",
    "case": "",
    "images": [],
    "parent": null,
@@ -628,15 +683,16 @@
    "confidence": "글 내용 직접 확인",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19683976",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "187623236",
    "title": "(제목 미확보)",
-   "time": "14:4x",
+   "time": "14:40대",
    "category": "pending",
    "reason": "아카라이브 글 목록에서 글 번호만 확보했다. 목록은 열렸지만 글 하나하나는 접근이 막혀 제목·내용·사진을 확인하지 못했다. 굿즈 관련성 자체가 미확인이며 피해 집계에 포함하지 않음.",
-   "author": "",
    "case": "",
    "images": [],
    "parent": null,
@@ -644,15 +700,16 @@
    "confidence": "글 번호만 확보 · 글 내용은 열리지 않음",
    "platform": "arca",
    "url": "https://arca.live/b/bluearchive/187623236",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "id",
+   "timeKind": "found"
   },
   {
    "id": "187624175",
    "title": "(제목 미확보)",
-   "time": "14:4x",
+   "time": "14:40대",
    "category": "pending",
    "reason": "아카라이브 글 목록에서 글 번호만 확보했다. 목록은 열렸지만 글 하나하나는 접근이 막혀 제목·내용·사진을 확인하지 못했다. 굿즈 관련성 자체가 미확인이며 피해 집계에 포함하지 않음.",
-   "author": "",
    "case": "",
    "images": [],
    "parent": null,
@@ -660,15 +717,16 @@
    "confidence": "글 번호만 확보 · 글 내용은 열리지 않음",
    "platform": "arca",
    "url": "https://arca.live/b/bluearchive/187624175",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "id",
+   "timeKind": "found"
   },
   {
    "id": "187624294",
    "title": "(제목 미확보)",
-   "time": "14:4x",
+   "time": "14:40대",
    "category": "pending",
    "reason": "아카라이브 글 목록에서 글 번호만 확보했다. 목록은 열렸지만 글 하나하나는 접근이 막혀 제목·내용·사진을 확인하지 못했다. 굿즈 관련성 자체가 미확인이며 피해 집계에 포함하지 않음.",
-   "author": "",
    "case": "",
    "images": [],
    "parent": null,
@@ -676,15 +734,16 @@
    "confidence": "글 번호만 확보 · 글 내용은 열리지 않음",
    "platform": "arca",
    "url": "https://arca.live/b/bluearchive/187624294",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "id",
+   "timeKind": "found"
   },
   {
    "id": "187624604",
    "title": "(제목 미확보)",
-   "time": "14:4x",
+   "time": "14:40대",
    "category": "pending",
    "reason": "아카라이브 글 목록에서 글 번호만 확보했다. 목록은 열렸지만 글 하나하나는 접근이 막혀 제목·내용·사진을 확인하지 못했다. 굿즈 관련성 자체가 미확인이며 피해 집계에 포함하지 않음.",
-   "author": "",
    "case": "",
    "images": [],
    "parent": null,
@@ -692,15 +751,16 @@
    "confidence": "글 번호만 확보 · 글 내용은 열리지 않음",
    "platform": "arca",
    "url": "https://arca.live/b/bluearchive/187624604",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "id",
+   "timeKind": "found"
   },
   {
    "id": "187624607",
    "title": "(제목 미확보)",
-   "time": "14:4x",
+   "time": "14:40대",
    "category": "pending",
    "reason": "아카라이브 글 목록에서 글 번호만 확보했다. 목록은 열렸지만 글 하나하나는 접근이 막혀 제목·내용·사진을 확인하지 못했다. 굿즈 관련성 자체가 미확인이며 피해 집계에 포함하지 않음.",
-   "author": "",
    "case": "",
    "images": [],
    "parent": null,
@@ -708,15 +768,16 @@
    "confidence": "글 번호만 확보 · 글 내용은 열리지 않음",
    "platform": "arca",
    "url": "https://arca.live/b/bluearchive/187624607",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "id",
+   "timeKind": "found"
   },
   {
    "id": "187625130",
    "title": "(제목 미확보)",
-   "time": "14:4x",
+   "time": "14:40대",
    "category": "pending",
    "reason": "아카라이브 글 목록에서 글 번호만 확보했다. 목록은 열렸지만 글 하나하나는 접근이 막혀 제목·내용·사진을 확인하지 못했다. 굿즈 관련성 자체가 미확인이며 피해 집계에 포함하지 않음.",
-   "author": "",
    "case": "",
    "images": [],
    "parent": null,
@@ -724,15 +785,16 @@
    "confidence": "글 번호만 확보 · 글 내용은 열리지 않음",
    "platform": "arca",
    "url": "https://arca.live/b/bluearchive/187625130",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "id",
+   "timeKind": "found"
   },
   {
    "id": "187625214",
    "title": "(제목 미확보)",
-   "time": "14:4x",
+   "time": "14:40대",
    "category": "pending",
    "reason": "아카라이브 글 목록에서 글 번호만 확보했다. 목록은 열렸지만 글 하나하나는 접근이 막혀 제목·내용·사진을 확인하지 못했다. 굿즈 관련성 자체가 미확인이며 피해 집계에 포함하지 않음.",
-   "author": "",
    "case": "",
    "images": [],
    "parent": null,
@@ -740,15 +802,16 @@
    "confidence": "글 번호만 확보 · 글 내용은 열리지 않음",
    "platform": "arca",
    "url": "https://arca.live/b/bluearchive/187625214",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "id",
+   "timeKind": "found"
   },
   {
    "id": "187625870",
    "title": "(제목 미확보)",
-   "time": "14:4x",
+   "time": "14:40대",
    "category": "pending",
    "reason": "아카라이브 글 목록에서 글 번호만 확보했다. 목록은 열렸지만 글 하나하나는 접근이 막혀 제목·내용·사진을 확인하지 못했다. 굿즈 관련성 자체가 미확인이며 피해 집계에 포함하지 않음.",
-   "author": "",
    "case": "",
    "images": [],
    "parent": null,
@@ -756,15 +819,16 @@
    "confidence": "글 번호만 확보 · 글 내용은 열리지 않음",
    "platform": "arca",
    "url": "https://arca.live/b/bluearchive/187625870",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "id",
+   "timeKind": "found"
   },
   {
    "id": "187625918",
    "title": "(제목 미확보)",
-   "time": "14:4x",
+   "time": "14:40대",
    "category": "pending",
    "reason": "아카라이브 글 목록에서 글 번호만 확보했다. 목록은 열렸지만 글 하나하나는 접근이 막혀 제목·내용·사진을 확인하지 못했다. 굿즈 관련성 자체가 미확인이며 피해 집계에 포함하지 않음.",
-   "author": "",
    "case": "",
    "images": [],
    "parent": null,
@@ -772,15 +836,16 @@
    "confidence": "글 번호만 확보 · 글 내용은 열리지 않음",
    "platform": "arca",
    "url": "https://arca.live/b/bluearchive/187625918",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "id",
+   "timeKind": "found"
   },
   {
    "id": "187626066",
    "title": "(제목 미확보)",
-   "time": "14:4x",
+   "time": "14:40대",
    "category": "pending",
    "reason": "아카라이브 글 목록에서 글 번호만 확보했다. 목록은 열렸지만 글 하나하나는 접근이 막혀 제목·내용·사진을 확인하지 못했다. 굿즈 관련성 자체가 미확인이며 피해 집계에 포함하지 않음.",
-   "author": "",
    "case": "",
    "images": [],
    "parent": null,
@@ -788,15 +853,16 @@
    "confidence": "글 번호만 확보 · 글 내용은 열리지 않음",
    "platform": "arca",
    "url": "https://arca.live/b/bluearchive/187626066",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "id",
+   "timeKind": "found"
   },
   {
    "id": "187626150",
    "title": "(제목 미확보)",
-   "time": "14:4x",
+   "time": "14:40대",
    "category": "pending",
    "reason": "아카라이브 글 목록에서 글 번호만 확보했다. 목록은 열렸지만 글 하나하나는 접근이 막혀 제목·내용·사진을 확인하지 못했다. 굿즈 관련성 자체가 미확인이며 피해 집계에 포함하지 않음.",
-   "author": "",
    "case": "",
    "images": [],
    "parent": null,
@@ -804,15 +870,16 @@
    "confidence": "글 번호만 확보 · 글 내용은 열리지 않음",
    "platform": "arca",
    "url": "https://arca.live/b/bluearchive/187626150",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "id",
+   "timeKind": "found"
   },
   {
    "id": "187626284",
    "title": "(제목 미확보)",
-   "time": "14:4x",
+   "time": "14:40대",
    "category": "pending",
    "reason": "아카라이브 글 목록에서 글 번호만 확보했다. 목록은 열렸지만 글 하나하나는 접근이 막혀 제목·내용·사진을 확인하지 못했다. 굿즈 관련성 자체가 미확인이며 피해 집계에 포함하지 않음.",
-   "author": "",
    "case": "",
    "images": [],
    "parent": null,
@@ -820,15 +887,16 @@
    "confidence": "글 번호만 확보 · 글 내용은 열리지 않음",
    "platform": "arca",
    "url": "https://arca.live/b/bluearchive/187626284",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "id",
+   "timeKind": "found"
   },
   {
    "id": "187626311",
    "title": "(제목 미확보)",
-   "time": "14:4x",
+   "time": "14:40대",
    "category": "pending",
    "reason": "아카라이브 글 목록에서 글 번호만 확보했다. 목록은 열렸지만 글 하나하나는 접근이 막혀 제목·내용·사진을 확인하지 못했다. 굿즈 관련성 자체가 미확인이며 피해 집계에 포함하지 않음.",
-   "author": "",
    "case": "",
    "images": [],
    "parent": null,
@@ -836,15 +904,16 @@
    "confidence": "글 번호만 확보 · 글 내용은 열리지 않음",
    "platform": "arca",
    "url": "https://arca.live/b/bluearchive/187626311",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "id",
+   "timeKind": "found"
   },
   {
    "id": "187626440",
    "title": "(제목 미확보)",
-   "time": "14:4x",
+   "time": "14:40대",
    "category": "pending",
    "reason": "아카라이브 글 목록에서 글 번호만 확보했다. 목록은 열렸지만 글 하나하나는 접근이 막혀 제목·내용·사진을 확인하지 못했다. 굿즈 관련성 자체가 미확인이며 피해 집계에 포함하지 않음.",
-   "author": "",
    "case": "",
    "images": [],
    "parent": null,
@@ -852,7 +921,9 @@
    "confidence": "글 번호만 확보 · 글 내용은 열리지 않음",
    "platform": "arca",
    "url": "https://arca.live/b/bluearchive/187626440",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "id",
+   "timeKind": "found"
   },
   {
    "id": "19684103",
@@ -860,7 +931,6 @@
    "time": "14:40",
    "category": "pending",
    "reason": "제목은 변온 머그컵이 원래 색으로 돌아가는 조건에 대한 질문으로 보이나, 글 내용이 열리지 않고 첨부 이미지도 없어 글 내용은 확인하지 못함. 파손·포장 불만 근거 없음.",
-   "author": "gold2298",
    "case": null,
    "images": [],
    "parent": null,
@@ -868,15 +938,16 @@
    "confidence": "제목만 확인, 글 내용은 확인하지 못함",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684103",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "posted"
   },
   {
    "id": "19684129",
    "title": "이번 와헌굿즈업체 첨하는곳인가",
    "time": "14:47",
    "category": "repeat",
-   "reason": "글 내용 직접 확인: '념글 카노에컵 박살나서 배송된것도 그렇고 담요에 그냥 포카붙여서 이런식으로 보내는것도 그렇고 … 개인거래해도 이것보다 잘포장해줄듯'. 포장 방식 비판. 첨부 사진은 포토카드 상태 불만 최초 글(19684002)의 사진과 완전히 같은 파일이며, 공개 계정 식별값도 fare2634로 동일 → 새 피해자가 아니라 같은 사람의 후속 비판. 피해 집계에 합산하지 않음.",
-   "author": "fare2634",
+   "reason": "포장 방식을 비판한 글입니다. 첨부 사진이 포토카드 상태 불만 최초 글의 사진과 같은 파일이고 작성자도 동일해, 새로운 피해자가 아니라 같은 작성자의 후속 비판으로 판단했습니다.",
    "case": "BA-PC-01",
    "images": [],
    "parent": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684002",
@@ -884,7 +955,9 @@
    "confidence": "높음 — 글과 사진을 직접 대조",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684129",
-   "relation": "본인 후속"
+   "relation": "본인 후속",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "19684144",
@@ -892,7 +965,6 @@
    "time": "14:49",
    "category": "repeat",
    "reason": "글 내용 '무섭다....' 한 줄. 갤러리에 혹평이 많아 보인다는 분위기 언급일 뿐 직접 수령·피해 주장 없음. 여론 확산 쪽으로만 기록.",
-   "author": "osman0",
    "case": null,
    "images": [],
    "parent": null,
@@ -900,15 +972,16 @@
    "confidence": "글 내용 직접 확인",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684144",
-   "relation": "타인 인용·비판"
+   "relation": "타인 인용·비판",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "19684173",
    "title": "까노에 머그컵 변온해봄",
    "time": "14:56",
    "category": "other",
-   "reason": "글 내용 직접 확인: '작은 박스로 배송와서 깨진데 없나 두려웠는데 다행히 잘 왔다'. 사진 직접 확인: 머그컵과 솥 모양 피규어 뚜껑이 파손 없이 온전함. 다만 '컵 안쪽이랑 까노에 피규어 뚜껑에 먼지나 부스러기가 있어' 세척 후 사용했다는 청결 지적은 별도 기록. 파손 집계 대상 아님(정상 수령 사례).",
-   "author": "bond6248",
+   "reason": "작은 상자로 배송되어 파손을 걱정했으나 잘 왔다는 내용입니다. 사진에서 머그컵과 피규어 뚜껑이 파손 없이 온전한 것을 확인했습니다. 다만 컵 안쪽과 피규어 뚜껑에 먼지나 부스러기가 있어 세척 후 사용했다는 지적이 함께 있어 별도로 기록했습니다. 파손 집계 대상은 아닙니다.",
    "case": null,
    "images": [
     "19684173-0.jpg"
@@ -918,7 +991,13 @@
    "confidence": "글과 사진을 직접 확인",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684173",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted",
+   "otherGroup": "수령했으나 지적 사항 있음",
+   "finishIssue": [
+    "먼지·부스러기"
+   ]
   },
   {
    "id": "19684330",
@@ -926,7 +1005,6 @@
    "time": "15:26",
    "category": "pending",
    "reason": "제목상 수령 보고. 글 내용이 열리지 않고 이미지 추출도 되지 않아 상태(정상/파손) 확인 불가. 한 번 더 시도했지만 같았다.",
-   "author": "yudong911",
    "case": null,
    "images": [],
    "parent": null,
@@ -934,7 +1012,9 @@
    "confidence": "제목만 확인, 글 내용은 확인하지 못함",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684330",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "posted"
   },
   {
    "id": "19684213",
@@ -942,7 +1022,6 @@
    "time": "15:00",
    "category": "excluded",
    "reason": "글 내용 '굿즈 구매했어!'. 오프라인 매장 구매 인증으로 이번 배송 굿즈 파손·포장과 무관.",
-   "author": "kyh00004",
    "case": null,
    "images": [],
    "parent": null,
@@ -950,7 +1029,9 @@
    "confidence": "글 내용 직접 확인",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684213",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "19684229",
@@ -958,7 +1039,6 @@
    "time": "15:03",
    "category": "excluded",
    "reason": "글 내용 '지금은 굿즈사러 합정왔는데 다음 코스 알려주삼'. 오프라인 나들이 글, 파손·포장과 무관.",
-   "author": "split3158",
    "case": null,
    "images": [],
    "parent": null,
@@ -966,7 +1046,9 @@
    "confidence": "글 내용 직접 확인",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684229",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "19684249",
@@ -974,7 +1056,6 @@
    "time": "15:08",
    "category": "excluded",
    "reason": "해외 직구 J리그 굿즈의 카드 매출전표 문의. 이번 겨울나기 굿즈와 다른 상품 → 범위 밖.",
-   "author": "smt0628",
    "case": null,
    "images": [],
    "parent": null,
@@ -982,7 +1063,9 @@
    "confidence": "글 내용 직접 확인",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684249",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "187627121",
@@ -990,7 +1073,6 @@
    "time": "14:49",
    "category": "pending",
    "reason": "아카라이브 검색 목록에서 제목만 확보. 글 내용은 접근이 막혀 글 내용·사진 미확인 → 정상/파손 판단 불가.",
-   "author": "코로노크롱스",
    "case": null,
    "images": [],
    "parent": null,
@@ -998,7 +1080,9 @@
    "confidence": "목록에서 제목만 확인",
    "platform": "arca.live",
    "url": "https://arca.live/b/bluearchive/187627121",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "found"
   },
   {
    "id": "187627340",
@@ -1006,7 +1090,6 @@
    "time": "14:52",
    "category": "pending",
    "reason": "아카라이브 검색 목록에서 제목만 확보. 제목은 완충재 포장 방식에 대한 문제제기로 보이나 글 내용과 어떤 상품인지는 확인하지 못함 → 재인용·비판으로 확정하지 않음.",
-   "author": "농빵",
    "case": null,
    "images": [],
    "parent": null,
@@ -1014,7 +1097,9 @@
    "confidence": "목록에서 제목만 확인",
    "platform": "arca.live",
    "url": "https://arca.live/b/bluearchive/187627340",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "found"
   },
   {
    "id": "187630478",
@@ -1022,7 +1107,6 @@
    "time": "15:32",
    "category": "pending",
    "reason": "아카라이브 검색 목록에서 제목만 확보. 제목상 변온 정상 작동 영상으로 보이나 글 내용과 영상은 확인하지 못함.",
-   "author": "파햐햐",
    "case": null,
    "images": [],
    "parent": null,
@@ -1030,15 +1114,16 @@
    "confidence": "목록에서 제목만 확인",
    "platform": "arca.live",
    "url": "https://arca.live/b/bluearchive/187630478",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "found"
   },
   {
    "id": "19684419",
    "title": "컵왔다아아!!!!!",
    "time": "15:45",
    "category": "other",
-   "reason": "직접 수령 보고. 글 내용 '진짜 이렇게오네 ㅋㅋㅋ 다행히 깨지진 않음'. 사진 직접 확인: 작은 골판지 상자 안에 완충재 없이 얇은 비닐만 씌운 머그컵이 들어 있으나 파손은 보이지 않음. 파손 제보가 아니라 포장 방식 지적 + 정상 수령 사례로 분류한다.",
-   "author": "wjscjf999",
+   "reason": "직접 수령했고 깨지지 않았다는 내용입니다. 사진에서 작은 골판지 상자 안에 완충재 없이 얇은 비닐만 씌운 머그컵이 들어 있으나 파손은 보이지 않는 것을 확인했습니다. 파손 제보가 아니라 포장 방식 지적이 포함된 정상 수령 사례로 분류했습니다.",
    "case": null,
    "images": [
     "19684419-0.jpg"
@@ -1048,7 +1133,13 @@
    "confidence": "글 내용과 사진을 직접 확인",
    "platform": "DC projectmx",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684419",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted",
+   "otherGroup": "수령했으나 지적 사항 있음",
+   "finishIssue": [
+    "완충재 없음"
+   ]
   },
   {
    "id": "187631829",
@@ -1056,7 +1147,6 @@
    "time": "15:49",
    "category": "pending",
    "reason": "아카라이브 검색 목록에서 제목만 확보(접근이 반복해서 막혀, 글 목록만 한 시간에 한 번 확인하도록 제한함). 제목상 정상 수령 후 사용 문의로 보이나 글 내용은 확인하지 못함.",
-   "author": "이즈나",
    "case": null,
    "images": [],
    "parent": null,
@@ -1064,7 +1154,9 @@
    "confidence": "목록에서 제목만 확인",
    "platform": "arca.live",
    "url": "https://arca.live/b/bluearchive/187631829",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "found"
   },
   {
    "id": "187632461",
@@ -1072,7 +1164,6 @@
    "time": "15:58",
    "category": "pending",
    "reason": "아카라이브 목록 제목만 확보. 제목상 구성품(포토카드·쿠폰) 확인 글로 보이며 파손 주장은 아니지만 글 내용은 확인하지 못함.",
-   "author": "이즈나",
    "case": null,
    "images": [],
    "parent": null,
@@ -1080,7 +1171,9 @@
    "confidence": "목록에서 제목만 확인",
    "platform": "arca.live",
    "url": "https://arca.live/b/bluearchive/187632461",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "found"
   },
   {
    "id": "187632579",
@@ -1088,7 +1181,6 @@
    "time": "15:59",
    "category": "pending",
    "reason": "아카라이브 목록 제목만 확보. 에리 모자(모자 베개) 착용 경험을 묻는 글로 보이며 이번 모니터링에서 처음 포착된 에리 모자 관련 아카 글. 글 내용·사진 미확인이라 품질 평가 여부는 판단 불가.",
-   "author": "dqd",
    "case": null,
    "images": [],
    "parent": null,
@@ -1096,7 +1188,9 @@
    "confidence": "목록에서 제목만 확인",
    "platform": "arca.live",
    "url": "https://arca.live/b/bluearchive/187632579",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "found"
   },
   {
    "id": "187627414",
@@ -1104,7 +1198,6 @@
    "time": "14:53",
    "category": "pending",
    "reason": "앞서 제목조차 확보하지 못했던 아카 글. 이번에 목록에서 제목만 확보했다. 제목상 배송 지연·대기 글로 보이나 글 내용은 확인하지 못함.",
-   "author": "마리의쮸글성수",
    "case": null,
    "images": [],
    "parent": null,
@@ -1112,15 +1205,16 @@
    "confidence": "목록에서 제목만 확인",
    "platform": "arca.live",
    "url": "https://arca.live/b/bluearchive/187627414",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "found"
   },
   {
    "id": "19684494",
    "title": "카노에 컵 왔다",
    "time": "16:03",
    "category": "other",
-   "reason": "글 내용 직접 확인: '다행히 깨지진 않았는데 자기컵 보내는데 뽁뽁이 하나 없는건 진짜 레전드인듯'. 사진 직접 확인: 머그컵과 피규어 뚜껑, 헤일로까지 정상으로 장착되어 있고 파손은 없다. 완충재 없는 포장에 대한 불만과 헤일로 연결부가 빡빡하다는 지적이 함께 있지만 파손 제보는 아니다.",
-   "author": "commit3112",
+   "reason": "깨지지는 않았으나 완충재가 전혀 없었다는 내용입니다. 사진에서 머그컵과 피규어 뚜껑, 헤일로까지 정상으로 장착되어 있고 파손은 없는 것을 확인했습니다. 완충재 없는 포장과 헤일로 연결부가 빡빡하다는 지적이 함께 있으나 파손 제보는 아닙니다.",
    "case": null,
    "images": [],
    "parent": null,
@@ -1128,15 +1222,21 @@
    "confidence": "글과 사진을 직접 확인",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684494",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted",
+   "otherGroup": "수령했으나 지적 사항 있음",
+   "finishIssue": [
+    "완충재 없음",
+    "피규어 조립부 빡빡함"
+   ]
   },
   {
    "id": "19684562",
    "title": "카노에 컵",
    "time": "16:18",
    "category": "other",
-   "reason": "글 내용 직접 확인: 아크릴 헤일로 한쪽 면에만 보호필름이 붙어 있다는 마감 지적. 사진 직접 확인: 아직 색이 변하지 않은 흰 머그컵에 피규어 뚜껑과 헤일로가 장착된 상태이며 파손·금·파편은 없다. 보호필름 지적은 작성자 진술이다.",
-   "author": "video0396",
+   "reason": "아크릴 헤일로 한쪽 면에만 보호필름이 붙어 있었다는 마감 지적입니다. 사진에서 아직 색이 변하지 않은 흰 머그컵에 피규어 뚜껑과 헤일로가 장착된 상태이며 파손이나 금은 없는 것을 확인했습니다. 보호필름에 대한 지적은 작성자의 진술입니다.",
    "case": null,
    "images": [],
    "parent": null,
@@ -1144,15 +1244,20 @@
    "confidence": "사진은 직접 확인 · 보호필름 부분은 작성자 진술",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684562",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted",
+   "otherGroup": "수령했으나 지적 사항 있음",
+   "finishIssue": [
+    "보호필름 한쪽 면만 부착"
+   ]
   },
   {
    "id": "19684636",
    "title": "카노에, 기뻐..!",
    "time": "16:34",
    "category": "other",
-   "reason": "글 내용 직접 확인: '카노에 머그컵 도착! 넘 이뻐'. 사진 직접 확인: 제품 상자가 눌림·찢김·젖음 없이 미개봉 상태다. 정상 수령 사례이며, 미개봉이라 안에 든 제품 상태까지는 확인되지 않았다.",
-   "author": "simakaja",
+   "reason": "머그컵이 도착했다는 내용입니다. 사진에서 제품 상자가 눌림이나 찢김, 젖음 없이 미개봉 상태인 것을 확인했습니다. 미개봉이어서 안에 든 제품 상태까지는 확인되지 않았습니다.",
    "case": null,
    "images": [],
    "parent": null,
@@ -1160,15 +1265,17 @@
    "confidence": "사진은 직접 확인 · 내용물 상태는 미확인",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684636",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted",
+   "otherGroup": "미개봉 상태 도착"
   },
   {
    "id": "19684645",
    "title": "친구한테 선물받은 카노에컵 왔다",
    "time": "16:36",
    "category": "other",
-   "reason": "글 내용 직접 확인: '처음앤 택배박스 이따구길래 개쫄았는데 다행히 멀쩡했다 … 컵도 멀쩡함'. 사진 직접 확인: 바깥 택배 상자는 한쪽 모서리가 눌려 찌그러졌지만, 열어 보니 제품 상자가 완충재 없이 그대로 들어 있었고 제품 파손은 보이지 않는다. 완충재 없는 포장이 곧바로 파손으로 이어지지는 않은 사례로 함께 둔다.",
-   "author": "tazadol",
+   "reason": "택배 상자 상태를 보고 걱정했으나 제품은 멀쩡했다는 내용입니다. 사진에서 바깥 택배 상자는 한쪽 모서리가 눌려 있었고, 열어 보니 제품 상자가 완충재 없이 그대로 들어 있었으나 제품 파손은 보이지 않는 것을 확인했습니다. 완충재 없는 포장이 곧바로 파손으로 이어지지는 않은 사례로 함께 수록했습니다.",
    "case": null,
    "images": [
     "19684645-1.jpg"
@@ -1178,7 +1285,14 @@
    "confidence": "글과 사진을 직접 확인",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684645",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted",
+   "otherGroup": "수령했으나 지적 사항 있음",
+   "finishIssue": [
+    "완충재 없음",
+    "택배 상자 눌림"
+   ]
   },
   {
    "id": "19684738",
@@ -1186,7 +1300,6 @@
    "time": "16:53",
    "category": "repeat",
    "reason": "글 내용 전문 확인: '작년 호시노 프린팅 당하고 안샀는데 / 십덕으로 한탕하려는 업체같음'. 사진이 없고 본인이 이번 상품을 사지 않았다고 적었다. 지난해 다른 상품 경험에 기댄 업체 전반 비판이라 직접 피해로 세지 않고, 업체 책임을 단정하는 근거로도 쓰지 않는다.",
-   "author": "염자",
    "case": null,
    "images": [],
    "parent": null,
@@ -1194,7 +1307,9 @@
    "confidence": "글 내용은 직접 확인 · 근거는 본인 인상 수준",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684738",
-   "relation": "타인 인용·비판"
+   "relation": "타인 인용·비판",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "19684613",
@@ -1202,7 +1317,6 @@
    "time": "16:29",
    "category": "excluded",
    "reason": "글 내용 직접 확인: '4달이나 걸렸어'. 사진 직접 확인: 다른 캐릭터(카요코)의 인형 키링과 아크릴 스탠드로, 이번 모자 베개·변온 머그컵과 다른 상품이다. 배송이 오래 걸렸다는 말만 있고 파손·포장 불만은 없다 → 범위 밖.",
-   "author": "bts05047",
    "case": null,
    "images": [],
    "parent": null,
@@ -1210,7 +1324,9 @@
    "confidence": "글과 사진을 직접 확인",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684613",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "19684731",
@@ -1218,7 +1334,6 @@
    "time": "16:52",
    "category": "excluded",
    "reason": "글 내용 텍스트는 없고 사진만 있다. 사진 직접 확인: 카노에 팬아트 그림이며 굿즈 실물이 아니다. 다시 만들어 달라는 요청 글이라 상품 상태와 무관 → 범위 밖.",
-   "author": "룽~",
    "case": null,
    "images": [],
    "parent": null,
@@ -1226,7 +1341,9 @@
    "confidence": "사진을 직접 확인",
    "platform": "DC",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684731",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "187637366",
@@ -1234,7 +1351,6 @@
    "time": "17:00",
    "category": "pending",
    "reason": "아카라이브 글 목록에서 제목만 확보했다. 제목상 카노에 컵을 산 사람들을 향한 글로 보이지만, 글 하나하나는 접근이 막혀 내용과 사진을 확인하지 못했다. 파손 주장인지 아닌지는 판단할 수 없다.",
-   "author": "",
    "case": null,
    "images": [],
    "parent": null,
@@ -1242,15 +1358,16 @@
    "confidence": "목록에서 제목만 확인",
    "platform": "arca.live",
    "url": "https://arca.live/b/bluearchive/187637366",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "found"
   },
   {
    "id": "187636915",
    "title": "와헌 점퍼 이제야 왔는데",
    "time": "16:55",
-   "category": "pending",
+   "category": "excluded",
    "reason": "아카라이브 글 목록에서 제목만 확보했다. 같은 겨울 굿즈 묶음의 다른 품목(점퍼) 배송 글로 보이며, 이번 모자 베개·변온 머그컵과 같은 상품은 아니다. 글 내용과 사진은 확인하지 못했다.",
-   "author": "",
    "case": null,
    "images": [],
    "parent": null,
@@ -1258,15 +1375,16 @@
    "confidence": "목록에서 제목만 확인",
    "platform": "arca.live",
    "url": "https://arca.live/b/bluearchive/187636915",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "found"
   },
   {
    "id": "19684836",
    "title": "까노에 센빠이 컵 왔다",
    "time": "17:08",
    "category": "other",
-   "reason": "직접 수령 보고. 글 내용은 '내껀 다행이 금 가거나 깨지진 않았네 이쁜듯'. 사진을 직접 열어 확인했다 — 책상 위 검은 머그컵에 금이나 깨진 곳이 없고, 뚜껑 위 피규어도 머리 장식까지 제대로 끼워져 있다. 파손 제보가 아니라 정상 수령 사례로 분류한다.",
-   "author": "g9",
+   "reason": "직접 수령했고 금이 가거나 깨진 곳이 없다는 내용입니다. 사진에서 책상 위 검은 머그컵에 금이나 깨진 곳이 없고 뚜껑 위 피규어도 머리 장식까지 제대로 끼워져 있는 것을 확인했습니다. 파손 제보가 아니라 정상 수령 사례로 분류했습니다.",
    "case": null,
    "images": [
     "19684836-0.jpg"
@@ -1276,15 +1394,17 @@
    "confidence": "글 내용과 사진을 모두 직접 확인",
    "platform": "DC projectmx",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684836",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted",
+   "otherGroup": "사진으로 정상 확인"
   },
   {
    "id": "19684909",
    "title": "머그컵 도착해서 바로 사용해봤다",
    "time": "17:23",
    "category": "other",
-   "reason": "직접 수령 후 사용 후기. 글 내용은 '하자 없이 잘됨 … 시간 지나고 온도 올라가면 끝까지 변하더라 따로 깨지거나 그런것도 없었고'. 사진 2장을 직접 열어 확인했다 — 음료를 담자 컵 겉면에 그림과 글자가 드러났고 몸체·손잡이에 깨진 곳이 없다. 앞서 '따뜻한 커피로는 색이 안 변했다'던 글과는 반대 결과지만, 그 글이 틀렸다는 뜻이 아니라 개체나 물 온도에 따라 다를 수 있다는 정도로만 본다.",
-   "author": "oo/",
+   "reason": "직접 수령한 뒤 사용한 후기이며 하자 없이 작동했다는 내용입니다. 사진 2장에서 음료를 담자 컵 겉면에 그림과 글자가 드러났고 몸체와 손잡이에 깨진 곳이 없는 것을 확인했습니다. 앞서 따뜻한 커피로는 색이 변하지 않았다던 글과는 반대 결과이나, 그 글이 틀렸다는 뜻이 아니라 개체나 물 온도에 따라 다를 수 있다는 정도로만 보았습니다.",
    "case": null,
    "images": [
     "19684909-0.jpg",
@@ -1295,15 +1415,17 @@
    "confidence": "글 내용과 사진을 모두 직접 확인",
    "platform": "DC projectmx",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684909",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted",
+   "otherGroup": "사진으로 정상 확인"
   },
   {
    "id": "19685048",
    "title": "까까컵 왔는데 까노에 헤일로 위쪽이 찐한색임?",
    "time": "17:53",
    "category": "pending",
-   "reason": "파손이나 포장 불만이 아니라 '색이 원래 이런 건지' 묻는 글이다. 글 내용은 '아님 연한색임? 원래 그라데이션 있었나?'. 사진을 직접 열어 확인했다 — 피규어 머리 위 투명 장식의 주황·금색 무늬에 짙고 옅은 차이가 보인다. 원래 그렇게 만든 것인지 칠이 고르지 않은 것인지는 판매 측 제품 사진과 맞춰 보지 못해 판단을 보류하고, 피해 집계에도 넣지 않는다.",
-   "author": "dibi",
+   "reason": "파손이나 포장 불만이 아니라 색이 원래 이런 것인지 묻는 글입니다. 사진을 직접 확인한 결과 피규어 머리 위 투명 장식의 주황·금색 무늬에 짙고 옅은 차이가 보입니다. 원래 그렇게 제작된 것인지 도색이 고르지 않은 것인지는 판매 측 제품 사진과 대조하지 못해 판단을 보류했으며, 피해 집계에도 넣지 않았습니다.",
    "case": "BA-CLR-01",
    "images": [
     "19685048-0.jpg"
@@ -1314,7 +1436,9 @@
    "platform": "DC projectmx",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19685048",
    "relation": "해당 없음 또는 미확인",
-   "caseTitle": "머그컵 색상·도색 편차"
+   "caseTitle": "머그컵 색상·도색 편차",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "19684925",
@@ -1322,7 +1446,6 @@
    "time": "17:27",
    "category": "excluded",
    "reason": "글 내용을 직접 확인했다. 예전에 산 다른 머그컵들을 모아 온 이야기이고 이번 굿즈에 대한 불만이 아니다. 앞의 정상 수령 후기와 같은 작성자이며, 이번 집계에서는 제외한다.",
-   "author": "oo/",
    "case": null,
    "images": [],
    "parent": null,
@@ -1330,7 +1453,9 @@
    "confidence": "글 내용을 직접 확인",
    "platform": "DC projectmx",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684925",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "19684998",
@@ -1338,7 +1463,6 @@
    "time": "17:43",
    "category": "excluded",
    "reason": "글 내용을 직접 확인했다. 캐릭터 그림 글이고 굿즈나 포장 이야기가 전혀 없다. 캐릭터 이름만 겹쳐 걸린 글이라 집계에서 제외한다.",
-   "author": "붐냥이",
    "case": null,
    "images": [],
    "parent": null,
@@ -1346,7 +1470,9 @@
    "confidence": "글 내용을 직접 확인",
    "platform": "DC projectmx",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19684998",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "19685072",
@@ -1354,7 +1480,6 @@
    "time": "17:58",
    "category": "excluded",
    "reason": "글 내용을 직접 확인했다. 다른 곳에서 가져온 캐릭터 그림이고 모자 베개 굿즈와는 관계가 없다. '모자'라는 낱말만 겹쳐 걸린 글이라 집계에서 제외한다.",
-   "author": "score5866",
    "case": null,
    "images": [],
    "parent": null,
@@ -1362,7 +1487,9 @@
    "confidence": "글 내용을 직접 확인",
    "platform": "DC projectmx",
    "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19685072",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted"
   },
   {
    "id": "187639616",
@@ -1370,7 +1497,6 @@
    "time": "17:27",
    "category": "pending",
    "reason": "아카라이브 글 목록에서 제목만 확보했다. 제목상 온도에 따라 그림이 바뀌는 머그컵의 사용 요령 글로 보이며 파손 주장은 아닌 듯하지만, 글 하나하나는 열어 보지 못해 내용과 사진은 확인하지 못했다.",
-   "author": "",
    "case": null,
    "images": [],
    "parent": null,
@@ -1378,7 +1504,9 @@
    "confidence": "목록에서 제목만 확인",
    "platform": "arca.live",
    "url": "https://arca.live/b/bluearchive/187639616",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "found"
   },
   {
    "id": "187641038",
@@ -1386,7 +1514,6 @@
    "time": "17:45",
    "category": "pending",
    "reason": "아카라이브 글 목록에서 제목만 확보했다. 제목만으로는 어떤 상품을 말하는지 분명하지 않고 글 내용도 열어 보지 못해, 이번 굿즈 관련 여부 자체를 아직 가리지 못했다.",
-   "author": "",
    "case": null,
    "images": [],
    "parent": null,
@@ -1394,7 +1521,9 @@
    "confidence": "목록에서 제목만 확인",
    "platform": "arca.live",
    "url": "https://arca.live/b/bluearchive/187641038",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "found"
   },
   {
    "id": "187641898",
@@ -1402,7 +1531,6 @@
    "time": "17:56",
    "category": "pending",
    "reason": "아카라이브 글 목록에서 제목만 확보했다. 제목상 굿즈가 도착했다는 수령 글로 보이나, 어떤 품목인지와 상태는 글을 열어 보지 못해 확인하지 못했다.",
-   "author": "",
    "case": null,
    "images": [],
    "parent": null,
@@ -1410,7 +1538,9 @@
    "confidence": "목록에서 제목만 확인",
    "platform": "arca.live",
    "url": "https://arca.live/b/bluearchive/187641898",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "found"
   },
   {
    "id": "187642269",
@@ -1418,7 +1548,6 @@
    "time": "18:00",
    "category": "pending",
    "reason": "아카라이브 글 목록에서 제목만 확보했다. 제목상 에리 모자 품목의 배송을 기다리는 글로 보이며 파손 주장은 아니지만, 글 내용은 확인하지 못했다.",
-   "author": "",
    "case": null,
    "images": [],
    "parent": null,
@@ -1426,7 +1555,9 @@
    "confidence": "목록에서 제목만 확인",
    "platform": "arca.live",
    "url": "https://arca.live/b/bluearchive/187642269",
-   "relation": "해당 없음 또는 미확인"
+   "relation": "해당 없음 또는 미확인",
+   "depth": "title",
+   "timeKind": "found"
   }
  ]
 }

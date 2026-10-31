@@ -41,7 +41,8 @@ ul{padding-left:20px}li{margin:5px 0}
 a{color:#15509c}
 .foot{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim)}
 .err{color:var(--hit);font-weight:600}
-@media(max-width:700px){.sheet{margin:0;padding:26px 20px 44px;box-shadow:none}.tiles{grid-template-columns:repeat(2,1fr)}h1{font-size:23px}}
+@media(max-width:700px){.sheet{margin:0;padding:26px 20px 44px;box-shadow:none}.tiles{grid-template-columns:repeat(2,1fr)}h1{font-size:23px}
+ table{font-size:12.5px;table-layout:fixed}th,td{padding:7px 5px;word-break:break-word}th,td.t{white-space:normal}}
 @media print{
  body{background:#fff}.bar{display:none}
  .sheet{margin:0;padding:0;max-width:none;box-shadow:none}
@@ -76,12 +77,26 @@ function caseName(key,list){
   for(const [k,label] of CASE_NAMES) if(up.includes(k)) return label;
   return String(key);
 }
-function groupCases(posts,cat){
-  const g=new Map();
-  for(const p of posts){ if(p.category!==cat) continue; if(!p.case) continue;
-    if(!g.has(p.case)) g.set(p.case,[]); g.get(p.case).push(p); }
-  return g;
+// 사건 단위 묶음. 분류와 무관하게 같은 사건에 속한 글을 모두 담는다.
+// 같은 사건의 후속 글·인용 글도 '관련 게시글' 수에 포함되어야 하므로 분류로 걸러내지 않는다.
+function splitCases(posts){
+  const all=new Map();
+  for(const p of posts){ if(!p.case) continue;
+    if(!all.has(p.case)) all.set(p.case,[]); all.get(p.case).push(p); }
+  const hits=new Map(), waits=new Map();
+  for(const [k,list] of all){
+    list.sort((a,b)=>String(a.time).localeCompare(String(b.time))||String(a.id).localeCompare(String(b.id)));
+    if(list.some(p=>p.category==='confirmed')) hits.set(k,list);
+    else if(list.some(p=>p.category==='pending')) waits.set(k,list);
+  }
+  return [hits,waits];
 }
+// 사건 머리글에 쓸 대표 글: 파손·불량을 처음 제기한 글을 우선한다.
+function leadOf(list){
+  return list.find(p=>p.category==='confirmed')||list.find(p=>p.category==='pending')||list[0];
+}
+// 아카라이브는 게시 시각을 확인할 수 없어 관측 시각을 쓴다.
+function tm(p){return p.time+(p.timeKind==='found'?' 관측':'');}
 function named(groups){
   const base=new Map(),dup=new Map(),seen=new Map(),out=new Map();
   for(const [k,l] of groups){const b=caseName(k,l);base.set(k,b);dup.set(b,(dup.get(b)||0)+1);}
@@ -112,7 +127,9 @@ function para(root,text,cls){root.append(el('p',text,cls));}
 function render(d){
   const posts=d.posts||[], photoLabels=new Map((d.photos||[]).map(p=>[p.file,p.label]));
   const related=posts.filter(p=>p.category!=='excluded');
-  const hits=groupCases(posts,'confirmed'), waits=groupCases(posts,'pending');
+  const [hits,waits]=splitCases(posts);
+  const bodyN=related.filter(p=>p.depth==='body').length;
+  const partN=related.length-bodyN;
   const hitNames=named(hits), waitNames=named(waits);
   const shownPhotos=new Set();
   const caseImages=new Map();
@@ -121,7 +138,12 @@ function render(d){
     for(const f of (p.images||[])) if(!caseImages.get(p.case).includes(f)) caseImages.get(p.case).push(f); }
   const normal=posts.filter(p=>p.category==='other');
   const quoted=posts.filter(p=>p.category==='repeat');
-  const unread=posts.filter(p=>p.category==='pending'&&!p.case);
+  const isArca=p=>/arca|아카/i.test(p.platform||'');
+  const arca=posts.filter(isArca), dc=posts.filter(p=>!isArca(p));
+  const arcaTitle=arca.filter(p=>p.depth==='title').length;
+  const arcaId=arca.filter(p=>p.depth==='id').length;
+  const dcPart=dc.filter(p=>p.depth!=='body').length;
+  const hasFound=posts.some(p=>p.timeKind==='found');
 
   document.getElementById('meta').innerHTML=
     '대상 상품: <b>에리 모자 베개 · 카노에 변온 머그컵</b><br>'
@@ -133,8 +155,9 @@ function render(d){
   const lede=el('div',undefined,'lede');
   lede.append(el('b','요약. '));
   lede.append(document.createTextNode(
-    '상품 배송이 시작된 시점부터 위 기준 시각까지 관련 게시글 '+related.length+'건을 개별 확인했습니다. '
-    +'이 가운데 사진과 본문을 직접 대조해 '
+    '상품 배송이 시작된 시점부터 위 기준 시각까지 관련 게시글 '+related.length+'건을 확인했습니다. '
+    +'이 가운데 본문까지 확인한 글이 '+bodyN+'건, 제목 또는 글 번호만 확인한 글이 '+partN+'건입니다. '
+    +'본문을 확인한 글에서 사진과 내용을 직접 대조해 '
     +'서로 다른 피해로 판정한 사건은 '+hits.size+'건'+(hits.size?'('+summary(hits)+')':'')+'입니다. '
     +(waits.size?'불량을 주장하나 근거가 부족해 검증 중인 사건이 '+waits.size+'건 별도로 있으며 위 숫자에 포함하지 않았습니다. ':'')
     +'동일 사진이 반복 인용된 글은 하나의 사건으로 통합했습니다.'));
@@ -153,9 +176,10 @@ function render(d){
     const c=el('div',undefined,'case hit');
     c.append(el('h3',hitNames.get(key)));
     const tags=el('p');
-    tags.append(el('span',plat(list[0].platform)+' '+list[0].time+' 최초 관측','tag'),
+    const ld=leadOf(list);
+    tags.append(el('span',plat(ld.platform)+' '+tm(ld)+' 최초 관측','tag'),
                 el('span','관련 게시글 '+list.length+'건','tag'),
-                el('span',list[0].photoRelation||'사진 관계 미기재','tag'));
+                el('span',ld.photoRelation||'사진 관계 미기재','tag'));
     c.append(tags);
     for(const p of list) if(p.reason) c.append(el('p',p.reason));
     for(const f of (caseImages.get(key)||[])) if(!shownPhotos.has(f)){shownPhotos.add(f);c.append(figure(f,photoLabels.get(f)||hitNames.get(key)+' 관련 사진'));}
@@ -174,7 +198,8 @@ function render(d){
       const c=el('div',undefined,'case wait');
       c.append(el('h3',waitNames.get(key)+' · 검증 중'));
       const tags=el('p');
-      tags.append(el('span',plat(list[0].platform)+' '+list[0].time,'tag'),el('span','관련 게시글 '+list.length+'건','tag'));
+      const ld=leadOf(list);
+      tags.append(el('span',plat(ld.platform)+' '+tm(ld),'tag'),el('span','관련 게시글 '+list.length+'건','tag'));
       c.append(tags);
       for(const p of list) if(p.reason) c.append(el('p',p.reason));
       const links=el('p');
@@ -194,22 +219,51 @@ function render(d){
   }
 
   section(root,'정상 수령 사례 '+normal.length+'건');
-  para(root,'파손 사례만 모아 보면 실태가 한쪽으로 치우쳐 보입니다. 같은 기간 정상 수령 보고도 함께 수록합니다.','caution');
+  para(root,'파손 사례만 모아 보면 실태가 한쪽으로 치우쳐 보입니다. 같은 기간 정상 수령 보고도 함께 수록합니다. 다만 확인 정도가 서로 다릅니다. 사진으로 상품 상태를 확인한 글, 아직 개봉하지 않았다는 글, 상품은 정상이나 포장·마감에 지적을 남긴 글을 나누어 수록합니다.','caution');
   if(normal.length){
+    const ORDER=['사진으로 정상 확인','미개봉 상태 도착','조립 방법 안내','수령했으나 지적 사항 있음'];
+    const bucket=new Map(ORDER.map(k=>[k,[]]));
+    const etc=[];
+    for(const p of normal){const g=p.otherGroup; if(bucket.has(g)) bucket.get(g).push(p); else etc.push(p);}
+    if(etc.length) bucket.set('구분 미지정',etc);
+    for(const [g,list] of bucket){
+      if(!list.length) continue;
+      root.append(el('h3',g+' '+list.length+'건'));
+      const t=document.createElement('table');
+      t.innerHTML='<thead><tr><th>출처</th><th>시각</th><th>게시글 · 확인 내용</th></tr></thead>';
+      const tb=document.createElement('tbody');
+      for(const p of list){
+        const tr=document.createElement('tr');
+        tr.append(el('td',plat(p.platform)+' '+p.id,'t'),el('td',tm(p),'t'));
+        const td=el('td');const u=safeUrl(p.url);
+        if(u){const a=el('a',p.title||'(제목 미확보)');a.href=u;a.target='_blank';a.rel='noopener noreferrer';td.append(a);}
+        else td.append(document.createTextNode(p.title||'(제목 미확보)'));
+        if((p.finishIssue||[]).length)td.append(el('div','지적: '+p.finishIssue.join(' · '),'t'));
+        if(p.reason)td.append(el('div',p.reason,'t'));
+        tr.append(td);tb.append(tr);
+      }
+      t.append(tb);root.append(t);
+    }
+  } else para(root,'현재 기준으로 정상 수령으로 분류한 게시글이 없습니다.');
+
+  const fin=new Map();
+  for(const p of posts) for(const k of (p.finishIssue||[])){
+    if(!fin.has(k)) fin.set(k,{n:0,dmg:0});
+    const e=fin.get(k); e.n++; if(p.category==='confirmed') e.dmg++;
+  }
+  if(fin.size){
+    section(root,'포장·마감 지적 요약');
+    para(root,'상품 파손과는 별개로, 포장이나 마감 상태를 지적한 내용을 유형별로 모은 수치입니다. 한 게시글에 여러 지적이 담긴 경우 유형마다 세었습니다. 지적이 있다는 사실이 곧 제품 하자를 뜻하지는 않습니다.','caution');
     const t=document.createElement('table');
-    t.innerHTML='<thead><tr><th>출처</th><th>시각</th><th>게시글 · 확인 내용</th></tr></thead>';
+    t.innerHTML='<thead><tr><th>지적 유형</th><th>관측 게시글</th><th>제품 파손 동반</th></tr></thead>';
     const tb=document.createElement('tbody');
-    for(const p of normal){
+    for(const [k,e] of [...fin].sort((a,b)=>b[1].n-a[1].n)){
       const tr=document.createElement('tr');
-      tr.append(el('td',plat(p.platform)+' '+p.id,'t'),el('td',p.time,'t'));
-      const td=el('td');const u=safeUrl(p.url);
-      if(u){const a=el('a',p.title||'(제목 미확보)');a.href=u;a.target='_blank';a.rel='noopener noreferrer';td.append(a);}
-      else td.append(document.createTextNode(p.title||'(제목 미확보)'));
-      if(p.reason)td.append(el('div',p.reason,'t'));
-      tr.append(td);tb.append(tr);
+      tr.append(el('td',k),el('td',e.n+'건','t'),el('td',e.dmg?e.dmg+'건':'없음','t'));
+      tb.append(tr);
     }
     t.append(tb);root.append(t);
-  } else para(root,'현재 기준으로 정상 수령으로 분류한 게시글이 없습니다.');
+  }
 
   section(root,'인용·비판 게시글 '+quoted.length+'건');
   para(root,'타인의 사진이나 글을 인용해 비판한 글, 작성자 본인의 후속 글입니다. 새로운 피해로 집계하지 않았습니다.','caution');
@@ -225,22 +279,25 @@ function render(d){
   if(d.coverage){const p=el('p',d.coverage);p.style.whiteSpace='pre-line';root.append(p);}
   const lim=document.createElement('ul');
   [ 'X(엑스)는 이번 관측 대상에서 제외했습니다. 로그인 없이 최신 게시글을 열람할 수 없어, 본 보고에는 X 게시글이 한 건도 포함되지 않았습니다.',
-    '아카라이브는 게시글 목록은 열람되나 개별 게시글 접근이 반복 차단되어, 제목까지만 확인된 글이 '+unread.length+'건 있습니다. 해당 글은 피해로 집계하지 않고 검증 대기로 분류했습니다.',
-    '디시인사이드 갤러리는 정상 열람했습니다. 다만 게시글이 삭제·수정되면 본 보고 내용과 달라질 수 있습니다.',
+    '아카라이브 게시글 '+arca.length+'건은 개별 게시글 접근이 반복 차단되어 본문을 확인하지 못했습니다. 이 가운데 제목까지 확인한 글이 '+arcaTitle+'건, 제목조차 확인하지 못하고 글 번호만 확보한 글이 '+arcaId+'건입니다. 해당 글은 피해로 집계하지 않았습니다.',
+    '디시인사이드 갤러리는 대부분 본문까지 확인했습니다. 다만 '+dcPart+'건은 본문이 열리지 않아 제목까지만 확인했습니다.',
+    '게시글은 이후 삭제되거나 수정될 수 있습니다. 그 경우 본 보고 내용과 원문이 달라집니다.',
     '구매자 신원, 주문 내역, 업체 책임 소재는 확인 대상이 아니며 확정하지 않았습니다. 사진이 유사하다는 사실만으로 동일인으로 보지 않습니다.',
     '본 보고는 공개 게시글만 열람해 작성했습니다. 작성자 개인정보(계정 식별값·주문번호·주소)는 수집하지 않았습니다.'
   ].forEach(s=>lim.append(el('li',s)));
   root.append(lim);
 
   section(root,'관측 게시글 전체 목록 '+posts.length+'건');
-  para(root,'분류 근거를 기록한 전체 목록입니다. ‘이번 상품과 직접 관련 없음’으로 분류한 '+(posts.length-related.length)+'건을 포함합니다.','caution');
-  const LABEL={confirmed:'확인된 사건',pending:'검증 중',repeat:'인용·비판',other:'정상 수령·기타',excluded:'직접 관련 없음'};
+  para(root,'분류 근거를 기록한 전체 목록입니다. ‘이번 상품과 직접 관련 없음’으로 분류한 '+(posts.length-related.length)+'건을 포함합니다. ‘본문 미확인’은 파손 주장 여부를 판단할 만큼 내용을 확인하지 못한 글이며, 위 ‘검증 중인 사건’과는 다릅니다.','caution');
+  const LABEL={confirmed:'확인된 사건',pending:'본문 미확인',repeat:'인용·비판',other:'정상 수령·기타',excluded:'직접 관련 없음'};
+  const label=p=>p.category==='pending'&&p.case?'검증 중 사건':(LABEL[p.category]||p.category);
+  const DEPTH={body:'본문 확인',title:'제목만 확인',id:'글 번호만 확보'};
   const all=document.createElement('table');
-  all.innerHTML='<thead><tr><th>분류</th><th>출처</th><th>시각</th><th>게시글</th></tr></thead>';
+  all.innerHTML='<thead><tr><th>분류</th><th>확인 정도</th><th>출처</th><th>시각</th><th>게시글</th></tr></thead>';
   const tb=document.createElement('tbody');
   for(const p of posts){
     const tr=document.createElement('tr');
-    tr.append(el('td',LABEL[p.category]||p.category,'t'),el('td',plat(p.platform)+' '+p.id,'t'),el('td',p.time,'t'));
+    tr.append(el('td',label(p),'t'),el('td',DEPTH[p.depth]||'','t'),el('td',plat(p.platform)+' '+p.id,'t'),el('td',tm(p),'t'));
     const td=el('td');const u=safeUrl(p.url);
     if(u){const a=el('a',p.title||'(제목 미확보)');a.href=u;a.target='_blank';a.rel='noopener noreferrer';td.append(a);}
     else td.append(document.createTextNode(p.title||'(제목 미확보)'));
@@ -250,6 +307,7 @@ function render(d){
 
   const f=el('div',undefined,'foot');
   f.append(el('div','본 보고는 공개 게시글 관측 결과이며, 관측 기준 시각 이후의 변동은 반영되지 않았습니다.'));
+  if(hasFound) f.append(el('div','시각 표기 중 ‘관측’이 붙은 항목은 게시 시각이 아니라 해당 게시글을 확인한 시각입니다.'));
   f.append(el('div','자료 갱신: '+(d.updatedAt||'미기재')));
   root.append(f);
 }
