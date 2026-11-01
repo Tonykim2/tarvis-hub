@@ -1,7 +1,7 @@
 {
- "observedAt": "2026-11-01 10:06까지 확인 (분류 근거를 기록한 글 122건)",
- "updatedAt": "2026-11-01T10:12+09:00",
- "imageCount": 21,
+ "observedAt": "2026-11-01 11:06까지 확인 (분류 근거를 기록한 글 125건)",
+ "updatedAt": "2026-11-01T11:12+09:00",
+ "imageCount": 22,
  "coverage": "정상 수령 보고가 늘어난 것이 앞서 확인된 파손 사례를 상쇄하지는 않습니다. 두 수치는 분리해 보아야 합니다. 아카라이브는 글 목록만 확인했고 글 하나하나는 접근이 막혀 내용과 사진을 확인하지 못했습니다. 엑스(옛 트위터)는 이번 점검 범위에 들어 있지 않습니다.",
  "photos": [
   {
@@ -87,6 +87,10 @@
   {
    "file": "19686969-1.jpg",
    "label": "머그컵 내부 검은 점 자국 · 같은 컵 바깥면 인쇄 상태(번짐 없이 또렷함)"
+  },
+  {
+   "file": "19688842-0.jpg",
+   "label": "조립 불량 · 머그컵 뚜껑 피규어에 헤일로가 끼워지지 않은 상태"
   }
  ],
  "posts": [
@@ -3262,6 +3266,86 @@
     "topic:pillow"
    ],
    "tone": "mixed",
+   "toneBasis": "body"
+  },
+  {
+   "id": "19688842",
+   "title": "까까컵 나만 그러냐??",
+   "time": "10:08",
+   "category": "pending",
+   "reason": "머그컵 뚜껑 피규어의 헤일로를 머리에 끼우려 했으나 너무 뻑뻑해서 끼우지 못했다는 글입니다. 함께 올라온 사진에서도 헤일로가 달리지 않은 상태가 확인됩니다. 다만 사진으로는 끼워지지 않은 상태까지만 알 수 있고 구멍 치수가 잘못된 것인지는 확인하지 못해 판단을 보류했습니다. 앞서 올라온 같은 증상의 글과는 작성자도 사진도 다릅니다.",
+   "case": "BA-ASSEMBLY-02",
+   "images": [
+    "19688842-0.jpg"
+   ],
+   "parent": null,
+   "photoRelation": "기존 사진과 겹치지 않는 새 장면(직접 눈으로 확인)",
+   "confidence": "글 내용과 사진을 직접 확인 / 원인 미확인",
+   "platform": "DC projectmx",
+   "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19688842",
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted",
+   "tags": [
+    "char:kanoe",
+    "neg:assembly",
+    "topic:figure",
+    "topic:mug"
+   ],
+   "tone": "negative",
+   "toneBasis": "body"
+  },
+  {
+   "id": "19689017",
+   "title": "근데 까노에컵은 찐빠의 연속이던데 에리다요 모자는 괜찮나",
+   "time": "10:56",
+   "category": "repeat",
+   "reason": "앞서 올라온 머그컵 문제들을 언급하면서 모자 베개는 괜찮을지 걱정하는 글입니다. 직접 받았다거나 피해를 입었다는 내용은 없어 별도 피해로 세지 않았습니다.",
+   "case": "",
+   "images": [],
+   "parent": null,
+   "photoRelation": "함께 올라온 사진은 실물인지 확인하지 못해 근거로 쓰지 않았습니다",
+   "confidence": "글 내용 직접 확인",
+   "platform": "DC projectmx",
+   "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19689017",
+   "relation": "타인 인용·비판",
+   "depth": "body",
+   "timeKind": "posted",
+   "tags": [
+    "char:eri",
+    "char:kanoe",
+    "neg:assembly",
+    "pos:satisfied",
+    "topic:arrival",
+    "topic:mug",
+    "topic:pillow"
+   ],
+   "tone": "mixed",
+   "toneBasis": "body"
+  },
+  {
+   "id": "19688978",
+   "title": "에리모자내일이면도착하겠다",
+   "time": "10:46",
+   "category": "excluded",
+   "reason": "내일이면 모자 베개가 도착하겠다는 글입니다. 아직 물건을 받기 전이라 상태에 대한 내용이 없어 집계에서 제외했습니다.",
+   "case": "",
+   "images": [],
+   "parent": null,
+   "photoRelation": "사진 없음",
+   "confidence": "글 내용 직접 확인 — 적힌 내용은 제목뿐",
+   "platform": "DC projectmx",
+   "url": "https://gall.dcinside.com/mgallery/board/view/?id=projectmx&no=19688978",
+   "relation": "해당 없음 또는 미확인",
+   "depth": "body",
+   "timeKind": "posted",
+   "tags": [
+    "char:eri",
+    "scope:offtopic",
+    "topic:arrival",
+    "topic:pillow"
+   ],
+   "tone": "neutral",
    "toneBasis": "body"
   }
  ]
