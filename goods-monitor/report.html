@@ -246,6 +246,53 @@ function render(d){
     }
   } else para(root,'현재 기준으로 정상 수령으로 분류한 게시글이 없습니다.');
 
+  const TONE={positive:'만족',mixed:'만족과 지적이 섞인 글',neutral:'중립',negative:'부정'};
+  const TOPIC=[['topic:mug','카노에 변온 머그컵'],['topic:pillow','에리 모자·목베개'],['topic:figure','동봉 피규어'],['topic:photocard','특전 포토카드'],['topic:thermal','변온 기능']];
+  const tagsOf=p=>Array.isArray(p.tags)?p.tags:[];
+  const tcount={positive:0,mixed:0,neutral:0,negative:0};
+  for(const p of posts) if(tcount[p.tone]!==undefined) tcount[p.tone]++;
+  if(tcount.positive+tcount.mixed+tcount.negative){
+    section(root,'게시글 기조와 만족 쪽 관측');
+    para(root,'파손 사례만 보면 상황이 한쪽으로 치우쳐 보입니다. 같은 기간 게시글을 기조별로 나눈 수치를 함께 제시합니다. 게시글 수는 구매자 수가 아니며, 만족 게시글이 많다는 사실이 위에 확인된 파손 사건을 상쇄하지 않습니다. 두 수치는 분리해 보아야 합니다.','caution');
+    const t1=document.createElement('table');
+    t1.innerHTML='<thead><tr><th>기조</th><th>게시글</th></tr></thead>';
+    const b1=document.createElement('tbody');
+    for(const k of ['positive','mixed','neutral','negative']){const tr=document.createElement('tr');tr.append(el('td',TONE[k]),el('td',tcount[k]+'건','t'));b1.append(tr);}
+    t1.append(b1);root.append(t1);
+    para(root,'만족과 섞인 글을 합하면 '+(tcount.positive+tcount.mixed)+'건, 부정은 '+tcount.negative+'건입니다. 다만 게시글을 쓴 사람만 집계되므로 정상 수령 후 글을 쓰지 않은 구매자는 어느 쪽에도 포함되지 않습니다.');
+    const rows=[];
+    for(const [tag,label] of TOPIC){
+      const sel=posts.filter(p=>tagsOf(p).includes(tag));
+      if(!sel.length) continue;
+      rows.push([label,sel.filter(p=>p.tone==='positive').length,sel.filter(p=>p.tone==='mixed').length,sel.filter(p=>p.tone==='negative').length]);
+    }
+    if(rows.length){
+      root.append(el('h3','상품별 기조 차이'));
+      const t2=document.createElement('table');
+      t2.innerHTML='<thead><tr><th>상품</th><th>만족</th><th>섞임</th><th>부정</th></tr></thead>';
+      const b2=document.createElement('tbody');
+      for(const r of rows){const tr=document.createElement('tr');tr.append(el('td',r[0]),el('td',r[1]+'건','t'),el('td',r[2]+'건','t'),el('td',r[3]+'건','t'));b2.append(tr);}
+      t2.append(b2);root.append(t2);
+      para(root,'한 게시글이 여러 상품을 함께 언급한 경우 상품마다 집계했으므로 합계는 전체 게시글 수와 일치하지 않습니다. 머그컵은 만족보다 섞임·부정이 두텁고 모자·목베개는 그 반대입니다. 지적이 머그컵 쪽에 집중되어 있습니다.','caution');
+    }
+    const hl=posts.filter(p=>p.highlight);
+    if(hl.length){
+      root.append(el('h3','원인 판단에 참고할 게시글'));
+      para(root,'만족 쪽 게시글 가운데 포장·기능 판단에 직접 참고할 내용만 발췌했습니다.','caution');
+      for(const p of hl){
+        const c=el('div',undefined,'case');
+        c.append(el('h3','「'+(p.title||'(제목 미확보)')+'」'));
+        const tags=el('p');
+        tags.append(el('span',plat(p.platform)+' '+tm(p),'tag'),el('span',TONE[p.tone]||'기조 미기재','tag'));
+        c.append(tags);
+        c.append(el('p',p.highlight));
+        const u=safeUrl(p.url);
+        if(u){const q=el('p');const a=el('a','원문 '+p.id);a.href=u;a.target='_blank';a.rel='noopener noreferrer';q.append(document.createTextNode('원문: '),a);c.append(q);}
+        root.append(c);
+      }
+    }
+  }
+
   const fin=new Map();
   for(const p of posts) for(const k of (p.finishIssue||[])){
     if(!fin.has(k)) fin.set(k,{n:0,dmg:0});
